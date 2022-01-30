@@ -1,0 +1,165 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  a {
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    font-size: 0.875rem;
+    color: #ffffff !important;
+    opacity: 0.7;
+    text-decoration: none;
+    text-align: center;
+  }
+  li {
+    padding: 0 0.75rem;
+    cursor: pointer;
+    &:last-child {
+      padding: 0 0 0 0.75rem;
+    }
+  }
+}
+.dropdown-menu {
+  background-color: #00017166;
+  top: 40px;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background: transparent !important;
+}
+.menubar {
+  width: 100%;
+  position: relative;
+}
+.transparedNav {
+  background-color: transparent;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  padding: 1rem 0;
+  z-index: 1;
+  .container-fluid {
+    padding: 0;
+  }
+}
+nav {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.4s ease-out;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-brand {
+  img {
+    width: 100%;
+    max-width: 15rem;
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+#dropdown {
+  a {
+    display: block;
+  }
+  .dropdown-item {
+    padding: 0.25rem;
+  }
+}
+.bgcolornav {
+  background-color: #161616;
+  box-shadow: 0px 3px 7px #161616;
+  padding: 1rem 0;
+  .nav-links {
+    background: transparent !important;
+  }
+}
+#connectwallet {
+  a.connect-wallet {
+    border: 1px solid #33a852;
+    font-weight: 500;
+    background: transparent;
+    color: #33a852 !important;
+    padding: 0.5rem 1rem !important;
+    opacity: 10;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+// Media Queries
+@media (min-width: 992px) {
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row !important; 
+  }
+}
+// @media (min-width: 992px) {
+//   .navbar-expand-md .navbar-toggler {
+//     display: none !important;
+//   }
+// }
+@media (max-width: 991px) {
+  .navbar-light .navbar-toggler {
+    background: #fefefe;
+  }
+  .nav-links {
+    align-items: flex-start;
+    background: #161616;
+    border-top: 1px solid #676768;
+    height: 100vh;
+    justify-content: flex-start;
+    margin: 2rem 0 0;
+    padding: 1.5rem 0;
+    li {
+      padding: 0.75rem 0;
+    }
+    a {
+      color: #676768 !important;
+    }
+  }
+  // .navbar-expand-md .navbar-toggler {
+  //   display: block;
+  // }
+}
+
+#navbarToggler {
+  display: none;
+}
+
+// .navbar-collapse {
+//   justify-content: flex-end;
+// }
+
+.bgcolornav .nav-links a {
+  cursor: pointer;
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    img {
+      max-width: 10rem;
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-toggler-icon {
+    background-image: url(../../assets/burgermenu.png) !important;
+  }
+  .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
