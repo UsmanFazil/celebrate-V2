@@ -8,7 +8,7 @@ import vipaccessmetaverse from "../../assets/vipaccessmetaverse.png";
 const MainSection = () => {
   return (
     <section className="main-section">
-      <div className="container-xl">
+      <Container fluid="xl">
         <div className="inner">
           <div className="graphic">
             <img src={vipaccessmetaverse} height="100%" width="100%" alt="vip access meta verse" />
@@ -21,7 +21,7 @@ const MainSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

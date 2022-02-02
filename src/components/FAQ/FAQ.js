@@ -1,7 +1,7 @@
 // Home Page #2 Roadmap Component
 
 import React from "react";
-import { Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import {
   Accordion,
   AccordionItem,
@@ -40,7 +40,7 @@ const FAQ = () => {
   ]
   return (
     <section id="faq">
-      <div className="container-xl">
+      <Container fluid="xl">
         <div className="title-center">
           <h2>FAQ</h2>
         </div>
@@ -64,7 +64,7 @@ const FAQ = () => {
             </Col>
           </Row>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

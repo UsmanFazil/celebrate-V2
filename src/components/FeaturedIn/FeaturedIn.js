@@ -1,7 +1,7 @@
 // Home Page #2 FeaturedIn Component
 
 import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Slider from "react-slick";
 // import { Link } from "react-router-dom";
 import featurecard from "../../assets/feature-card.png";
@@ -85,7 +85,7 @@ const FeaturedIn = () => {
   };
   return (
     <section id="featuredin">
-      <div className="container-xl">
+      <Container fluid="xl">
         <div className="title-left">
           <h2>Featured in</h2>
         </div>
@@ -133,7 +133,7 @@ const FeaturedIn = () => {
             )}
           </Slider>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

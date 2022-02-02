@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button } from 'reactstrap';
+import { Row, Col, Button, Container } from 'reactstrap';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
 import MenuBar from '../../components/Common/MenuBar';
 import cone from "../../assets/cone.png";
@@ -11,7 +11,7 @@ const ConnectWallet = () => {
         <React.Fragment>
             <MenuBar />
             <section id="connect-wallet">
-                <div className="container-xl">
+                <Container fluid="xl">
                     <Row>
                         <Col xl={6} lg={6} md={6} sm={12}>
                             <div className="content">
@@ -39,7 +39,7 @@ const ConnectWallet = () => {
                             </div>
                         </Col>
                     </Row>
-                </div>
+                </Container>
             </section>
         </React.Fragment>
     )

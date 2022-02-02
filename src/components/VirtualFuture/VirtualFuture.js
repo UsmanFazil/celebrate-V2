@@ -1,7 +1,7 @@
 // Home Page #2 Collections Component
 
 import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import platform from "../../assets/platform.png";
 import metamerch from "../../assets/metamerch.png";

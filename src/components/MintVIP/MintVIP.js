@@ -7,7 +7,7 @@ import minttoken from "../../assets/mint-token.png";
 const MintVIP = () => {
   return (
     <section id="mint-vip">
-      <div className="container-xl">
+      <Container fluid="xl">
         <Row>
           <Col lg={12} md={12} sm={12}>
             <div className="mint-vip">
@@ -32,7 +32,7 @@ const MintVIP = () => {
             </div>
           </Col>
         </Row>
-      </div>
+      </Container>
     </section>
   );
 }

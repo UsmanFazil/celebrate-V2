@@ -1,7 +1,7 @@
 // Home Page #2 Roadmap Component
 
 import React from "react";
-import { Container, Row, Col, Button } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import roadcard from "../../assets/roadmap-card.png";
 const Roadmap = () => {
@@ -39,7 +39,7 @@ const Roadmap = () => {
   ]
   return (
     <section id="roadmap">
-      <div className="container-xl">
+      <Container fluid="xl">
         <div className="title-center">
           <h2>Roadmap</h2>
         </div>
@@ -71,7 +71,7 @@ const Roadmap = () => {
             )}
           </Row>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

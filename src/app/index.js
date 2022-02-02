@@ -19,6 +19,8 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import 'loaders.css';
 import WhatCelebrate from './WhatCelebrate/WhatCelebrate';
 import ConnectWallet from './ConnectWallet/ConnectWallet';
+import MyAccount from './MyAccount/MyAccount';
+import Product from './Product/Product';
 
 // import { checkPropTypes } from 'prop-types';
 // import { connect } from 'tls';
@@ -34,6 +36,8 @@ const App = () => {
         <Route path="/" exact component={LandingPage} />
         <Route path="/what-is-celebrate" exact component={WhatCelebrate} />
         <Route path="/connect-wallet" exact component={ConnectWallet} />
+        <Route path="/my-account" exact component={MyAccount} />
+        <Route path="/product" exact component={Product} />
       </Switch>
     </Router>
   );

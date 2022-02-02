@@ -54,7 +54,7 @@ const WhatCelebrate = () => {
     <React.Fragment>
       <MenuBar />
       <section id="what-celebrate">
-        <div className="container-xl">
+        <Container fluid="xl">
           <Row>
             <Col lg={12}>
               <div className="heading">
@@ -72,7 +72,7 @@ const WhatCelebrate = () => {
                 {CatList.map(item =>
                   <div className="item">
                     <div className="icon">
-                      <img src={item.img} height="100%" width="100" alt={item.title} className="dn-res"/>
+                      <img src={item.img} height="100%" width="100" alt={item.title} className="dn-res" />
                       <img src={line} height="100%" width="5" alt="line" className="vl" />
                     </div>
                     <div className="detail">
@@ -115,7 +115,7 @@ const WhatCelebrate = () => {
               </div>
             </Col>
           </Row>
-        </div>
+        </Container>
       </section>
       <Footer />
     </React.Fragment>

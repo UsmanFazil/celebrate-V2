@@ -3,6 +3,7 @@
 import React from "react";
 import Slider from "react-slick";
 // import { Link } from "react-router-dom";
+import { Container } from "reactstrap";
 import minion from "../../assets/minion.png";
 const CyberEliteMinions = () => {
   const CybiezList = [
@@ -123,7 +124,7 @@ const CyberEliteMinions = () => {
   };
   return (
     <section id="ce-minions">
-      <div className="container-xl">
+      <Container fluid="xl">
         <div className="title-center">
           <h2>Meet the Cybiez</h2>
         </div>
@@ -145,7 +146,7 @@ const CyberEliteMinions = () => {
           <div className="before"></div>
           <div className="after"></div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

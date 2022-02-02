@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Container } from "reactstrap";
 import { animateScroll as scroll } from "react-scroll";
 import logo from "../../assets/logo.png";
 
@@ -10,7 +11,7 @@ class Footer extends React.Component {
     };
     return (
       <footer>
-        <div className="container-xl">
+        <Container fluid="xl">
           <div className="footer-container">
             <div className="footer-left">
               <img src={logo} height="100%" width="100%" alt="celebratenft" />
@@ -23,13 +24,13 @@ class Footer extends React.Component {
             <div className="footer-social-link">
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="/" target="_blank" rel="noopener noreferrer">
                     Twitter
                   </a>
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -38,7 +39,7 @@ class Footer extends React.Component {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -59,7 +60,7 @@ class Footer extends React.Component {
           <div className="gotop vert-move">
             <Link to="/" onClick={scrollToTop}><i className="fa fa-arrow-up"></i></Link>
           </div>
-        </div>
+        </Container>
       </footer>
     );
 

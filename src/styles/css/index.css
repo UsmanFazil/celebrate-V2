@@ -1560,3 +1560,506 @@ footer {
         font-size: 0.75rem; } }
   footer .gotop {
     display: none; }
+
+.my_account {
+  margin: 2rem 0; }
+  .my_account .my_profile .wallet {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    width: 100%; }
+    .my_account .my_profile .wallet .address {
+      color: #fff;
+      font-size: 1rem;
+      line-height: 22px;
+      width: 80%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: right; }
+    .my_account .my_profile .wallet button {
+      background-color: transparent;
+      border: none;
+      height: 1.5rem;
+      margin: 0 0 0 0.15rem;
+      padding: 0;
+      width: 1.5rem; }
+      .my_account .my_profile .wallet button img {
+        width: 100%; }
+  .my_account .my_profile .tab_res {
+    display: none;
+    background: url(../../assets/probg.png) no-repeat;
+    background-size: cover;
+    border-radius: 0.875rem;
+    overflow: hidden; }
+  .my_account .my_profile .tab_desk {
+    background: url(../../assets/probg.png) no-repeat;
+    background-size: cover;
+    border-radius: 0.875rem;
+    overflow: hidden; }
+  .my_account .my_profile .nav-tabs {
+    border-bottom: none; }
+    .my_account .my_profile .nav-tabs .nav-link {
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding: 1.5rem;
+      opacity: 1;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      position: relative; }
+      .my_account .my_profile .nav-tabs .nav-link:hover {
+        border-bottom: 1px solid #353535; }
+      .my_account .my_profile .nav-tabs .nav-link .brbtm {
+        background-color: #fff;
+        bottom: 0;
+        display: block;
+        height: 1px;
+        opacity: 0.1;
+        position: absolute;
+        width: 84%; }
+    .my_account .my_profile .nav-tabs .nav-link.active {
+      color: #161616;
+      border-radius: 0.875rem; }
+  .my_account .my_profile .nav .nav-item {
+    border-radius: 0.875rem;
+    width: 100%; }
+  .my_account .tab-detail .nav-tabs {
+    border-bottom: 1px solid #444; }
+    .my_account .tab-detail .nav-tabs .nav-link {
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding: 0.75rem;
+      opacity: 0.7;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      position: relative;
+      text-align: center; }
+      .my_account .tab-detail .nav-tabs .nav-link:hover {
+        border-bottom: 1px solid #33a852; }
+      .my_account .tab-detail .nav-tabs .nav-link .brbtm {
+        background-color: #fff;
+        bottom: 0;
+        display: block;
+        height: 1px;
+        opacity: 0.1;
+        position: absolute;
+        width: 84%; }
+    .my_account .tab-detail .nav-tabs .nav-link.active {
+      background-color: transparent;
+      border-bottom: 1px solid #33a852;
+      color: #fff;
+      opacity: 1; }
+  .my_account .tab-detail .nav {
+    flex-wrap: nowrap; }
+    .my_account .tab-detail .nav .nav-item {
+      border-radius: 0.875rem;
+      width: 100%; }
+  .my_account .tab-detail .tab-content .tab-content {
+    padding: 2.5rem 0; }
+    .my_account .tab-detail .tab-content .tab-content h1 {
+      color: #fff; }
+  .my_account .mint_exmembership {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 1.5rem 0 0;
+    text-align: center;
+    width: 100%; }
+    .my_account .mint_exmembership .inner {
+      margin: 0 auto;
+      max-width: 35rem;
+      text-align: center; }
+      .my_account .mint_exmembership .inner h2 {
+        color: #fff;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 52.5px; }
+      .my_account .mint_exmembership .inner h4 {
+        color: #fff;
+        font-size: 2.188rem;
+        font-weight: 400;
+        line-height: 52.5px; }
+      .my_account .mint_exmembership .inner a {
+        margin: 1rem auto 0;
+        max-width: 10rem; }
+      .my_account .mint_exmembership .inner img {
+        display: block;
+        margin: 2rem auto 0; }
+      .my_account .mint_exmembership .inner .btn {
+        align-items: center;
+        display: flex;
+        margin: 2rem auto;
+        min-width: 12rem; }
+        .my_account .mint_exmembership .inner .btn svg {
+          transform: rotate(0); }
+  @media (max-width: 767px) {
+    .my_account .my_profile {
+      padding: 0; }
+      .my_account .my_profile .tab_res {
+        display: block;
+        margin: 0 0 1.5rem;
+        width: 100%; }
+      .my_account .my_profile .tab_desk {
+        display: none; }
+      .my_account .my_profile .nav-tabs {
+        border-bottom: none; }
+        .my_account .my_profile .nav-tabs .nav-link {
+          color: #fff;
+          cursor: pointer;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 24px;
+          padding: 0.75rem;
+          opacity: 1;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%; }
+          .my_account .my_profile .nav-tabs .nav-link:hover {
+            border-bottom: 1px solid #353535; }
+        .my_account .my_profile .nav-tabs .nav-link.active {
+          color: #161616;
+          border: 1px solid #fff;
+          border-radius: 0.875rem;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+      .my_account .my_profile .nav {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        overflow: hidden; }
+        .my_account .my_profile .nav .nav-item {
+          padding: 0 0.75rem;
+          position: relative;
+          text-align: center;
+          width: auto; }
+          .my_account .my_profile .nav .nav-item .brbtm {
+            background-color: #fff;
+            right: 0;
+            display: block;
+            height: 100%;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            width: 1px; }
+    .my_account .tab-detail .nav .nav-item {
+      width: auto; }
+    .my_account .exclusive_card {
+      justify-content: center; }
+      .my_account .exclusive_card .single_item {
+        max-width: 20rem; }
+    .my_account .mint_exmembership {
+      height: 100%; }
+      .my_account .mint_exmembership .inner h2 {
+        font-size: 2rem; }
+      .my_account .mint_exmembership .inner img {
+        max-width: 15rem; } }
+  @media (max-width: 575px) {
+    .my_account .tab-detail .nav .nav-item .nav-link {
+      font-size: 1rem;
+      padding: 0.5rem; }
+    .my_account .mint_exmembership .inner h4 {
+      font-size: 1.5rem;
+      line-height: 36px; } }
+  @media (max-width: 360px) {
+    .my_account .my_profile .nav-tabs .nav-link {
+      font-size: 0.875rem;
+      padding: 0.5rem; }
+    .my_account .my_profile .nav .nav-item {
+      padding: 0 0.5rem; }
+    .my_account .tab-detail .nav .nav-item .nav-link {
+      font-size: 0.875rem;
+      padding: 0.5rem; } }
+
+.exclusive_card {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%; }
+  .exclusive_card .single_item {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%; }
+    .exclusive_card .single_item .itembg {
+      height: 100%;
+      position: absolute;
+      width: 100%; }
+    .exclusive_card .single_item .inner {
+      padding: 1.3rem;
+      z-index: 1; }
+    .exclusive_card .single_item .header {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      justify-content: space-between; }
+      .exclusive_card .single_item .header h4 {
+        color: #fff;
+        font-size: 1.566rem; }
+      .exclusive_card .single_item .header p {
+        color: #fff;
+        font-size: 1.085rem; }
+    .exclusive_card .single_item .content {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      position: relative; }
+      .exclusive_card .single_item .content img {
+        margin: 0 auto;
+        width: 100%; }
+    .exclusive_card .single_item .block {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      width: 128px; }
+    .exclusive_card .single_item .footer {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0 0;
+      width: 100%; }
+      .exclusive_card .single_item .footer p {
+        color: #fff;
+        font-size: 0.759rem;
+        margin: 0;
+        text-transform: uppercase;
+        width: 50%; }
+      .exclusive_card .single_item .footer img {
+        width: 7rem; }
+
+.product_page {
+  padding: 3rem 0; }
+  .product_page .product {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 0 5rem 0 0; }
+    .product_page .product .inner {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .product_page .product .inner h4 {
+        color: #fff;
+        font-size: 2rem;
+        line-height: 52.5px;
+        margin: 0 0 1.5rem; }
+      .product_page .product .inner span {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 0 0 1.5rem;
+        opacity: 0.5; }
+      .product_page .product .inner p {
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 0 0 1.5rem; }
+      .product_page .product .inner small {
+        color: #fff;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 27px;
+        margin: 0 0 0.5rem; }
+      .product_page .product .inner img {
+        width: 186px; }
+      .product_page .product .inner .price {
+        align-items: center;
+        border-top: 2px solid #969bab;
+        display: flex;
+        justify-content: space-between;
+        margin: 3rem 0 0;
+        padding: 1rem 0;
+        width: 100%; }
+        .product_page .product .inner .price:nth-of-type(2) {
+          border-top: none;
+          margin: 0;
+          padding: 0 0  1rem; }
+        .product_page .product .inner .price p {
+          color: #fff;
+          font-size: 0.875rem;
+          margin: 0;
+          opacity: 0.5; }
+        .product_page .product .inner .price .amount {
+          text-align: right;
+          color: #fff;
+          font-size: 1.25rem;
+          line-height: 22.98px; }
+          .product_page .product .inner .price .amount span {
+            font-size: 0.875rem;
+            margin-left: 0.25rem;
+            opacity: 0.5; }
+        .product_page .product .inner .price .quantity {
+          width: 5rem; }
+      .product_page .product .inner button {
+        background-color: #33a852;
+        border-radius: 12px;
+        color: #fcfcfc;
+        font-weight: 550;
+        font-size: 1.25rem;
+        line-height: 23.86px;
+        margin: 0.25rem 0;
+        padding: 1rem;
+        text-decoration: none;
+        text-align: center;
+        width: 100%; }
+        .product_page .product .inner button:focus {
+          box-shadow: none; }
+  .product_page .product_img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%; }
+    .product_page .product_img img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%; }
+  @media (max-width: 1280px) {
+    .product_page .product {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      padding: 0 1rem 0 0; } }
+  @media (max-width: 767px) {
+    .product_page .row {
+      flex-wrap: wrap-reverse; }
+    .product_page .exclusive_card {
+      justify-content: center; }
+      .product_page .exclusive_card .single_item {
+        max-width: 20rem; }
+    .product_page .product {
+      margin: 2rem 0 1rem;
+      padding: 0; } }
+  @media (max-width: 575px) {
+    .product_page {
+      margin: 0 0 2rem; }
+      .product_page .row {
+        flex-wrap: wrap-reverse; }
+      .product_page .product_img {
+        margin: 0 0 2rem; }
+      .product_page .product {
+        padding: 0; }
+        .product_page .product .inner h4 {
+          font-size: 1.5rem; }
+        .product_page .product .inner p {
+          font-size: 1.125rem; } }
+
+.modal-open {
+  padding-right: 0 !important; }
+
+.modal-dialog {
+  width: 100%;
+  margin-top: 10%; }
+  @media (max-width: 575px) {
+    .modal-dialog {
+      margin: 5% auto 0;
+      padding: 1rem; } }
+
+.modal-content {
+  background: linear-gradient(293.47deg, rgba(255, 255, 255, 0.15) 1.61%, rgba(255, 255, 255, 0.1) 95.39%);
+  backdrop-filter: blur(24px);
+  border-radius: 12px; }
+
+.modal-body {
+  padding: 2.5rem; }
+  .modal-body h4 {
+    color: #fff;
+    font-size: 1.375rem;
+    line-height: 25.89px;
+    margin: 0 0 2rem; }
+  .modal-body p {
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0.7; }
+    .modal-body p span {
+      color: #318347; }
+  .modal-body .note {
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0.5; }
+  .modal-body fieldset {
+    margin: 0 0 5rem; }
+  .modal-body .form-check {
+    margin-bottom: 0.75rem; }
+  .modal-body .form-check-input {
+    background-color: transparent;
+    border: 1px solid #fff; }
+  .modal-body .form-check-input:checked {
+    border: 1px solid #33a852;
+    box-shadow: none; }
+  .modal-body .form-check-input:checked[type="radio"] {
+    background-size: 6.5px; }
+  .modal-body .form-check-label {
+    color: #fff; }
+  .modal-body .input-group .form-control {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.75rem;
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0.8;
+    padding: 0.938rem;
+    text-overflow: ellipsis; }
+    .modal-body .input-group .form-control:focus {
+      box-shadow: none; }
+  .modal-body .input-group button {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    width: 3.5rem; }
+    .modal-body .input-group button:focus {
+      box-shadow: none; }
+    .modal-body .input-group button img {
+      height: 1.5rem;
+      width: 1.5rem; }
+  @media (max-width: 575px) {
+    .modal-body {
+      padding: 1rem; }
+      .modal-body .input-group .form-control {
+        padding: 0.938rem 3rem 0.938rem 0.938rem; } }
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  border-top: none; }
+  .modal-footer button {
+    border-radius: 12px;
+    color: #fcfcfc;
+    font-size: 1.125rem;
+    line-height: 23.86px;
+    padding: 1rem;
+    text-align: center; }
+    .modal-footer button:focus {
+      box-shadow: none; }
+  .modal-footer .cancel {
+    width: 40%; }
+  .modal-footer .continue {
+    background-color: #33a852;
+    width: 50%; }

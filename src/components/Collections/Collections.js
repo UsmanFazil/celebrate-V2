@@ -43,7 +43,7 @@ const Collections = () => {
   };
   return (
     <section className="collections">
-      <div className="container-xl">
+      <Container fluid="xl">
         <div className="title-center">
           <h2>Collections</h2>
         </div>
@@ -188,7 +188,7 @@ const Collections = () => {
             </div>
           </Col>
         </Row>
-      </div>
+      </Container>
     </section>
   );
 }
