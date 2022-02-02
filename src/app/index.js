@@ -14,7 +14,6 @@ import '../styles/css/imagehover.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-multi-carousel/lib/styles.css";
-import 'video-react/dist/video-react.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import 'loaders.css';
 import WhatCelebrate from './WhatCelebrate/WhatCelebrate';
