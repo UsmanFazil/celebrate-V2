@@ -7,15 +7,19 @@ import {
   Nav,
   NavItem,
   Container,
-  // UncontrolledDropdown,
-  // DropdownToggle,
-  // DropdownMenu,
-  // DropdownItem
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  Button,
 } from "reactstrap";
 import { animateScroll as scroll } from "react-scroll";
 // , Events, scroller
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import copy from '../../assets/copy.png';
+import copyblack from '../../assets/copyblack.png';
+import profile from '../../assets/profile.png';
+import logout from '../../assets/logout.png';
 import { setLocale } from "../../store/actions/locale";
 // import { connect } from "http2";
 import PropTypes from "prop-types";
@@ -29,10 +33,15 @@ class MenuBar extends React.Component {
       isOpen: false
     };
   }
+  // toggle() {
+  //   this.setState({
+  //     isOpen: !this.state.isOpen
+  //   });
+  // }
   toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+    this.setState(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }));
   }
   toggleClose = () => {
     this.setState({
@@ -152,6 +161,86 @@ class MenuBar extends React.Component {
                         <Link to="/connect-wallet" className="connect-wallet">
                           Connect Wallet
                         </Link>
+                      </NavItem>
+                      <NavItem id="account">
+                        <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                          <DropdownToggle>
+                            <img src={copy} alt="account" />
+                          </DropdownToggle>
+                          <DropdownMenu right>
+                            <ul>
+                              <li>
+                                <div className="wallet">
+                                  <div className="address">
+                                    0x278992821842c0a70
+                                  </div>
+                                  <Button>
+                                    <img src={copyblack} height="100%" width="100%" alt="copy" />
+                                  </Button>
+                                </div>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/my-account"
+                                  onClick={scrollToTop}
+                                  className="prolink"
+                                >
+                                  <img
+                                    src={profile}
+                                    alt="profile"
+                                  />
+                                  <span>My Account</span>
+                                </Link>
+                              </li>
+                              <li>
+                                <Link
+                                  to="/"
+                                  onClick={scrollToTop}
+                                  className="prolink"
+                                >
+                                  <img
+                                    src={logout}
+                                    alt="logout"
+                                  />
+                                  <span>Sign out</span>
+                                </Link>
+                              </li>
+                            </ul>
+                          </DropdownMenu>
+                        </Dropdown>
+                        {/* <Dropdown
+                        isOpen={this.state.dropdownOpen}
+                        toggle={this.toggle1}
+                        className="dNone"
+                      >
+                        <DropdownToggle
+                          tag="span"
+                          data-toggle="dropdown"
+                          aria-expanded={this.state.dropdownOpen}
+                        >
+                          <div className="togglrBtn">
+                            <img src={copy} alt="account" />
+                          </div>
+                        </DropdownToggle>
+                        <DropdownMenu right>
+                          <ul className="pro-list">
+                            <li>
+                              <Link
+                                to="/"
+                                onClick={scrollToTop}
+                                className="prolink"
+                                rel="noopener noreferrer"
+                              >
+                                <img
+                                  src={profile}
+                                  alt="profile"
+                                />
+                                <span>My Account</span>
+                              </Link>
+                            </li>
+                          </ul>
+                        </DropdownMenu>
+                      </Dropdown> */}
                       </NavItem>
                     </Nav>
                   </Collapse>
