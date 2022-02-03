@@ -40,6 +40,15 @@
       width: 100%;
     }
   }
+  @media (max-width: 1360px) {
+    .inner {
+      .graphic {
+        .btns {
+          right: 1rem;
+        }
+      }
+    }
+  }
   @media (max-width: 1199px) {
     .inner {
       padding: 0 5rem;
