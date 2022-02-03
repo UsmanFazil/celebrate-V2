@@ -350,6 +350,9 @@ nav {
       text-align: left;
       color: #fff;
       width: 100%; }
+  @media (max-width: 1360px) {
+    .main-section .inner .graphic .btns {
+      right: 1rem; } }
   @media (max-width: 1199px) {
     .main-section .inner {
       padding: 0 5rem; }
