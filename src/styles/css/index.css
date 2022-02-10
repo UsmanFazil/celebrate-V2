@@ -450,7 +450,11 @@ nav {
       justify-content: space-between;
       width: 100%; }
       .collections .card-box .top p {
-        margin: 0 0 0.5rem; }
+        font-size: 1.5rem;
+        font-family: Neue Bit Bold;
+        margin: 0 0 0.5rem;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: black; }
       .collections .card-box .top span {
         color: #fff;
         font-size: 0.875rem; }
@@ -1926,7 +1930,7 @@ footer {
         .product_page .product .inner .price:nth-of-type(2) {
           border-top: none;
           margin: 0;
-          padding: 0 0  1rem; }
+          padding: 0 0 1rem; }
         .product_page .product .inner .price p {
           color: #fff;
           font-size: 0.875rem;
