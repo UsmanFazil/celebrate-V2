@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { Col, Container, Row, Button, Modal, ModalBody, FormGroup, Label, InputGroup, Input, ModalFooter } from 'reactstrap';
 import Logo from '../../assets/logo.png';
 import MenuBar from "../../components/Common/MenuBar";
@@ -13,6 +13,7 @@ const Product = (props) => {
   const [modalPayment, setModalPayment] = useState(false);
 
   const toggle = () => setModal(true);
+  const toggleClose = () => setModal(!modal);
 
   const handleRadioButtonChange = () => {
     setModal(false)
@@ -21,11 +22,11 @@ const Product = (props) => {
 
   const togglePaymentClose = () => setModalPayment(!modalPayment);
 
-  let history = useHistory();
+  // let history = useHistory();
 
-  const handleRadioChange = () => {
-    history.push("/");
-  }
+  // const handleRadioChange = () => {
+  //   history.push("/");
+  // }
 
   return (
     <React.Fragment>
@@ -95,12 +96,15 @@ const Product = (props) => {
               <Label check>
                 <Input type="radio" name="radio1" onChange={() => handleRadioButtonChange()} /> ETH Payment </Label>
             </FormGroup>
-           
+            {/* <FormGroup check>
+              <Label check>
+                <Input type="radio" name="radio1" onChange={handleRadioChange} /> Credit Card</Label>
+            </FormGroup> */}
           </FormGroup>
         </ModalBody>
         <ModalFooter>
-          <Button color="secondary" className="cancel" onClick={toggle}>Cancel</Button>
-          <Button className="continue" onClick={toggle}>Continue</Button>
+          <Button color="secondary" className="cancel" onClick={toggleClose}>Cancel</Button>
+          <Button className="continue" onClick={() => handleRadioButtonChange()}>Continue</Button>
         </ModalFooter>
       </Modal>
       <Modal isOpen={modalPayment} className="modal-dialog">

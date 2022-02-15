@@ -18,17 +18,17 @@ const Collections = () => {
       id: '0',
       img: EditionVip,
       title: 'Edition #1 VIP',
-      quantity: '20000',
+      quantity: '2,000',
       subtitle: 'Edition #1 VIP',
-      desc: 'CelebrateNFT edition #1 VIP membership is ONE token to provide interoperability throughout the entire metaverse by giving you access to avatars, exclusive wearables, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!',
+      desc: 'CelebrateNFT edition #1 VIP membership is apart of our collection of 10,000 VIP tokens broken down into 5 editions. Each token provides interoperability throughout the entire metaverse by giving you access to avatars, Upgrade your Cybiez, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!',
     },
     {
       id: '1',
       img: Cyberelite,
-      title: 'CyberElite',
-      quantity: '20000',
-      subtitle: 'CyberElite Minions',
-      desc: 'These little CyberElite minions are the builders, creators, and brains behind all of the opperations at CelebrateNFT. They are on a mission to create amazing virtual experiences and digital assets using the top tech in web 3.0 to build the future of celebration in the metaverse.',
+      title: 'Cybiez',
+      quantity: '5,555',
+      subtitle: 'Cybiez',
+      desc: 'These little Cybiez are the builders, creators, and brains behind all of the opperations at CelebrateNFT. They are on a mission to change the way we access virtual experiences and digital merch using the top tech in web 3.0 to build the future of celebration in the metaverse.',
     }
   ]
   const LTRsettings = {
@@ -82,30 +82,34 @@ const Collections = () => {
                 {item.id === '0' ? (
                   <>
                     <ul>
-                      <li>- Mint a <Link to="#">FREE CyberElite</Link></li>
+                      <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
+                      <li>- Upgrade you Cybiez</li>
+                      <li>- Pre mint Cybiez public sale</li>
                       <li>- ETH giveaways</li>
-                      <li>- Community DAO</li>
-                      <li>- Pre mint future drops</li>
                       <li>- VIP Lounge access</li>
-                      <li>- Airdrops</li>
+                      <li>- Community DAO</li>
+                      <li></li>
+                      <li>- VIP access to CelebrateNFT platform</li>
                     </ul>
                     <div className="outcomes">
                       <p>Total Supply: <span>2,000</span></p>
-                      <p>Price: <span>0.02 ETH</span></p>
+                      <p>Price: <span>0.025 ETH</span></p>
                     </div>
                   </>
                 ) : (
                   <>
                     <ul>
                       <li>- 1/1 unique identity</li>
-                      <li>- upgrade your CyberElite to earn more and do more </li>
-                      <li>- Yield <Link to="#">$CELEBRATE</Link> daily</li>
+                      <li>- upgrade your Cybiez to earn more and do more </li>
+                      <li>- Yield <Link to="/what-is-celebrate">$CELEBRATE</Link> daily</li>
+                      <li>Full commercial rights</li>
+                      <li></li>
                       <li>- Community DAO</li>
                     </ul>
                     <div className="outcomes">
-                      <p>Total Supply: <span>3,333</span></p>
-                      <p>Private Sale: <span>2,000 VIP holders mint for free</span></p>
-                      <p>Public Sale: <span>1,333 mints for 0.065 ETH</span></p>
+                      <p>Total Supply: <span>5,555</span></p>
+                      <p>Private Sale: <span>2,000 reserved for VIP token holders airdrops</span></p>
+                      <p>Public Sale: <span>3,555 mint for 0.08 ETH</span></p>
                     </div>
                   </>
                 )}
@@ -147,30 +151,34 @@ const Collections = () => {
                   {item.id === '0' ? (
                     <>
                       <ul>
-                        <li>- Mint a <Link to="#">FREE CyberElite</Link></li>
+                        <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
+                        <li>- Upgrade you Cybiez</li>
+                        <li>- Pre mint Cybiez public sale</li>
                         <li>- ETH giveaways</li>
-                        <li>- Community DAO</li>
-                        <li>- Pre mint future drops</li>
                         <li>- VIP Lounge access</li>
-                        <li>- Airdrops</li>
+                        <li>- Community DAO</li>
+                        <li></li>
+                        <li>- VIP access to CelebrateNFT platform</li>
                       </ul>
                       <div className="outcomes">
                         <p>Total Supply: <span>2,000</span></p>
-                        <p>Price: <span>0.02 ETH</span></p>
+                        <p>Price: <span>0.025 ETH</span></p>
                       </div>
                     </>
                   ) : (
                     <>
                       <ul>
                         <li>- 1/1 unique identity</li>
-                        <li>- upgrade your CyberElite to earn more and do more </li>
-                        <li>- Yield <Link to="#">$CELEBRATE</Link> daily</li>
+                        <li>- upgrade your Cybiez to earn more and do more </li>
+                        <li>- Yield <Link to="/what-is-celebrate">$CELEBRATE</Link> daily</li>
+                        <li>Full commercial rights</li>
+                        <li></li>
                         <li>- Community DAO</li>
                       </ul>
                       <div className="outcomes">
-                        <p>Total Supply: <span>3,333</span></p>
-                        <p>Private Sale: <span>2,000 VIP holders mint for free</span></p>
-                        <p>Public Sale: <span>1,333 mints for 0.065 ETH</span></p>
+                        <p>Total Supply: <span>5,555</span></p>
+                        <p>Private Sale: <span>2,000 reserved for VIP token holders airdrops</span></p>
+                        <p>Public Sale: <span>3,555 mint for 0.08 ETH</span></p>
                       </div>
                     </>
                   )}

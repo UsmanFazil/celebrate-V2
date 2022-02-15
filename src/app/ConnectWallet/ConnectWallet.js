@@ -76,7 +76,6 @@ const ConnectWallet = () => {
                             <div className="content">
                                 <h1>Create Your Account.</h1>
                                 <h4>Celebrate the Metaverse</h4>
-                                <h4>Counter {counter} </h4>
                                 <div className="cone-img">
                                     <img src={cone} height="100%" width="100%" alt="celebrate" />
                                 </div>
