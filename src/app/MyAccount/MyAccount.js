@@ -1,24 +1,53 @@
-
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row, TabContent, TabPane, Nav, NavItem, NavLink, Button } from 'reactstrap';
 // import { Link } from 'react-router-dom';
 import classnames from 'classnames';
+import detectProvider from '../../components/detectProvider'
 import MenuBar from "../../components/Common/MenuBar";
 import probg from '../../assets/probg.png';
 import copy from '../../assets/copy.png';
 import vipnft from '../../assets/vipnft.png';
 import logo from '../../assets/logo.png';
 import { FiArrowRightCircle } from 'react-icons/fi';
+// import history from '../../components/Common/history';
+// import Web3 from 'web3/dist/web3.min.js';
+
+
+
 const MyAccount = () => {
+
     const [activeTab, setActiveTab] = useState('1');
     const [activeTabb, setActiveTabb] = useState('01');
+
     const toggle = (tab) => {
         if (activeTab !== tab) setActiveTab(tab);
     }
+
     const togglee = (tabb) => {
         if (activeTabb !== tabb) setActiveTabb(tabb);
     }
+
+    // const detectProvider = async () => {
+    //     let provider;
+    //     if (window.ethereum) {
+
+    //         provider = window.web3.currentProvider;
+    //         const web3 = new Web3(provider);
+    //         const accounts = await web3.eth.getAccounts()
+    //         if (accounts.length === 0) {
+    //             console.log("Please connect to metamask!!")
+    //             history.push("/connect-wallet");
+    //         } else {
+    //             history.push("/product");
+    //         }
+
+    //     } else if (window.web3) { //check if the browser is compatible
+    //         provider = window.web3.currentProvider;
+    //     } else {
+    //         console.warn("No Ethereum browser detected! Checkout metamask ");
+    //     }
+    //     // return provider;
+    // }
 
     return (
         <React.Fragment>
@@ -125,7 +154,7 @@ const MyAccount = () => {
                                                         <h4>
                                                             Mint Edition #1 VIP for exclusive Benefits!
                                                         </h4>
-                                                        <Button className="btn-mintvip">
+                                                        <Button className="btn-mintvip" onClick={() => detectProvider()}>
                                                             Mint VIP <FiArrowRightCircle />
                                                         </Button>
                                                     </div>

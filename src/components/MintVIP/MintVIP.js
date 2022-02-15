@@ -1,9 +1,10 @@
 // Home Page #2 Collections Component
-
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { BsArrowUpRightCircle } from 'react-icons/bs';
+import detectProvider from '../../components/detectProvider';
 import minttoken from "../../assets/mint-token.png";
+
 const MintVIP = () => {
   return (
     <section id="mint-vip">
@@ -19,7 +20,7 @@ const MintVIP = () => {
                   </div>
                   <div className="bottom">
                     <span>Reserve your free CyberElite now!</span>
-                    <Button className="btn-mintvip">
+                    <Button className="btn-mintvip" onClick={() => detectProvider()}>
                       Mint VIP
                       <BsArrowUpRightCircle />
                     </Button>

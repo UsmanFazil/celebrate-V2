@@ -60,14 +60,11 @@ const ConnectWallet = () => {
             setWeb3(web3)
             setCurrentAccount(accounts[0])
             dispatch({type: 'INCREMENT', payload: accounts[0]});
-            // history.push("/product")
             setIsConnected(true);
+            localStorage.setItem("Token",accounts[0])
+            history.push("/product");
         }
     }
-
-        // const UseDispatchStore = (value)=>{
-        //         useDispatch(increment(value))
-        // }
 
     return (
         <React.Fragment>
@@ -80,7 +77,6 @@ const ConnectWallet = () => {
                                 <h1>Create Your Account.</h1>
                                 <h4>Celebrate the Metaverse</h4>
                                 <h4>Counter {counter} </h4>
-                                {isLogged ? "I am true" : "I am false"}
                                 <div className="cone-img">
                                     <img src={cone} height="100%" width="100%" alt="celebrate" />
                                 </div>

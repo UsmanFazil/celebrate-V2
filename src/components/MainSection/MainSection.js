@@ -1,11 +1,12 @@
 // Home Page #1 Main Section Component
-
 import React from "react";
 import { Button, Container } from "reactstrap";
 import { BsArrowUpRightCircle } from 'react-icons/bs';
 import vipaccessmetaverse from "../../assets/vipaccessmetaverse.png";
-// import VipAccess from "../../assets/vip-access.png";
+import detectProvider from '../detectProvider'
+
 const MainSection = () => {
+
   return (
     <section className="main-section">
       <Container fluid="xl">
@@ -13,7 +14,7 @@ const MainSection = () => {
           <div className="graphic">
             <img src={vipaccessmetaverse} height="100%" width="100%" alt="vip access meta verse" />
             <div className="btns">
-              <Button className="btn-mintvip">
+              <Button className="btn-mintvip" onClick={() => detectProvider()}>
                 Mint VIP
                 <BsArrowUpRightCircle />
               </Button>

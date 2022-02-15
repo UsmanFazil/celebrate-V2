@@ -96,7 +96,7 @@ class MenuBar extends React.Component {
               <NavbarBrand tag={Link} to={"/"} onClick={scrollToTop}>
                 <img src={logo} alt="Celebrate logo" className="logodes" />
               </NavbarBrand>
-              {(window.location.pathname === "/connect-wallet" || window.location.pathname === "/product") ? null :
+              {window.location.pathname === "/connect-wallet"  ? null :
                 <>
                   <NavbarToggler onClick={this.toggle} />
                   <Collapse isOpen={this.state.isOpen} navbar>
