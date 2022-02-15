@@ -95,10 +95,7 @@ const Product = (props) => {
               <Label check>
                 <Input type="radio" name="radio1" onChange={() => handleRadioButtonChange()} /> ETH Payment </Label>
             </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" onChange={handleRadioChange} /> Credit Card</Label>
-            </FormGroup>
+           
           </FormGroup>
         </ModalBody>
         <ModalFooter>

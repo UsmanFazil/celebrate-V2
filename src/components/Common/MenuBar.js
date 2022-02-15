@@ -14,16 +14,15 @@ import {
 } from "reactstrap";
 import { animateScroll as scroll } from "react-scroll";
 
-// , Events, scroller
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import copy from '../../assets/copy.png';
 import copyblack from '../../assets/copyblack.png';
 import profile from '../../assets/profile.png';
 import logout from '../../assets/logout.png';
-import { setLocale } from "../../store/actions/locale";
+// import { setLocale } from "../../store/actions/locale";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 
 class MenuBar extends React.Component {
 
@@ -97,7 +96,7 @@ class MenuBar extends React.Component {
               <NavbarBrand tag={Link} to={"/"} onClick={scrollToTop}>
                 <img src={logo} alt="Celebrate logo" className="logodes" />
               </NavbarBrand>
-              {window.location.pathname === "/connect-wallet" ? null :
+              {(window.location.pathname === "/connect-wallet" || window.location.pathname === "/product") ? null :
                 <>
                   <NavbarToggler onClick={this.toggle} />
                   <Collapse isOpen={this.state.isOpen} navbar>
@@ -178,7 +177,7 @@ class MenuBar extends React.Component {
                             <DropdownToggle>
                               <img src={copy} alt="account" />
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu>
                               <ul>
                                 <li>
                                   <div className="wallet">
@@ -233,13 +232,15 @@ class MenuBar extends React.Component {
   }
 }
 
-MenuBar.propTypes = {
-  setLocale: PropTypes.func.isRequired
-};
+// MenuBar.propTypes = {
+  // setLocale: PropTypes.func.isRequired
+// };
 
 function mapStateToProps(state) { }
 
-export default connect(
-  mapStateToProps,
-  { setLocale }
-)(MenuBar);
+export default MenuBar;
+
+// export default connect(
+  // mapStateToProps,
+  // { setLocale }
+// )(MenuBar);
