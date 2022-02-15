@@ -11,30 +11,30 @@ const Roadmap = () => {
       q: 'Q1',
       year: '2022',
       point1: '/Website Revamp',
-      point2: '/CyberElite VIP private sale',
+      point2: '/VIP edition #1 sale',
     },
     {
       id: '1',
       q: 'Q2',
       year: '2022',
-      point1: '/CyberElites Public sale',
-      point2: '/Launch',
-      celebratelink: '$CELEBRATE',
+      point1: '/VIP Cybiez Airdrop',
+      point2: '/Cybiez public sale',
     },
     {
       id: '2',
       q: 'Q3',
       year: '2022',
-      point1: '/Launch Marketplace',
-      point2: '/Metamerch collab drops',
+      point1: '/Launch ',
+      point2: '/On Chain Token Swap',
+      point3: '/Token Liquidity pool',
+      celebratelink: '$CELEBRATE',
     },
     {
       id: '3',
       q: 'Q4',
       year: '2022',
-      point1: '/On Chain Token Swap',
-      point2: '/Token Liquidity pool',
-      point3: '/Token ICO',
+      point1: '/Launch Marketplace',
+      point2: '/Metamerch collab drops',
     },
   ]
   return (
@@ -56,13 +56,11 @@ const Roadmap = () => {
                     </div>
                   </div>
                   <div className="points">
-                    <p>{item.point1}</p>
-                    <p>{item.point2}
-                      {item.id === '1' ? (
-                        <Link to="/what-is-celebrate">&nbsp;{item.celebratelink}</Link>
-                      ) : ''}
-                    </p>
-                    {item.id === '3' ? (
+                    <p>{item.point1}  {item.id === '2' ? (
+                      <Link to="/what-is-celebrate">&nbsp;{item.celebratelink}</Link>
+                    ) : ''}</p>
+                    <p>{item.point2}</p>
+                    {item.id === '2' ? (
                       <p>{item.point3}</p>
                     ) : ''}
                   </div>

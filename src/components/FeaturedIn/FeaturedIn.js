@@ -101,7 +101,7 @@ const FeaturedIn = () => {
                       <p className="source">{item.source}</p>
                     </div>
                     <div className="date-by">
-                      <p>{item.date}</p>
+                      {/* <p>{item.date}</p> */}
                       <p>{item.by}</p>
                     </div>
                   </div>
@@ -113,8 +113,6 @@ const FeaturedIn = () => {
         <div className="mobile">
           <Slider {...LTRsettings}>
             {FeaturesList.map(item =>
-              // <Row>
-              //   <Col lg={12} md={12} sm={12} xs={12}>
               <div className="feature-item" key={item.id}>
                 <img src={featurecard} height="100%" width="100%" alt="feature card" className="cardbg" />
                 <div className="card-inner">
@@ -123,13 +121,11 @@ const FeaturedIn = () => {
                     <p className="source">{item.source}</p>
                   </div>
                   <div className="date-by">
-                    <p>{item.date}</p>
+                    {/* <p>{item.date}</p> */}
                     <p>{item.by}</p>
                   </div>
                 </div>
               </div>
-              //   </Col>
-              // </Row>
             )}
           </Slider>
         </div>

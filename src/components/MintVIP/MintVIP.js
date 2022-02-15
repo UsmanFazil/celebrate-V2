@@ -18,7 +18,7 @@ const MintVIP = () => {
                     <p>ONE token to provide interoperability throughout the entire metaverse by giving you access to avatars, upgrade Cybiez, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!</p>
                   </div>
                   <div className="bottom">
-                    <span>Reserve your free CyberElite now!</span>
+                    <span>Reserve your free Cybiez now!</span>
                     <Button className="btn-mintvip">
                       Mint VIP
                       <BsArrowUpRightCircle />

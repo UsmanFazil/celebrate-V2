@@ -12,7 +12,7 @@ const Ecosystem = () => {
       <Container fluid="xl">
         <div className="title-left">
           <h2>Ecosystem</h2>
-          <p>Our CyberElite minions always strive for utility</p>
+          <p>Our Cybiez always strive for utility</p>
         </div>
         <Row>
           <Col lg={12} md={12} sm={12}>
