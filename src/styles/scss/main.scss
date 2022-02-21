@@ -186,7 +186,7 @@
     position: relative;
     .cardbg {
       height: 100%;
-      position: absolute;
+      position: absolute; 
       width: 100%;
       z-index: -1;
     }
@@ -271,9 +271,9 @@
         color: #fff;
         font-size: 1.125rem;
         list-style: none;
-        width: 30%;
+        width: 50%;
         &:nth-child(even) {
-          width: 70%;
+          width: 50%;
         }
         a {
           color: #6ad935;
@@ -465,7 +465,6 @@
     a {
       color: #6ad935;
       font-size: 1.285rem;
-      text-transform: uppercase;
       text-decoration: none;
     }
     .item-one {
@@ -858,10 +857,12 @@
 #featuredin {
   padding: 5rem 0;
   .feature-item {
+    display: block;
     padding: 1rem;
     margin: 0 0 1.5rem;
     height: 100%;
     position: relative;
+    text-decoration: none;
     .cardbg {
       left: 0;
       position: absolute;
@@ -872,7 +873,7 @@
     .card-inner {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-between; 
       border-left: 1px solid #fff;
       height: 100%;
       padding: 0 0 0 1rem;
@@ -1284,7 +1285,7 @@
     }
   }
   .desc {
-    width: 72%;
+    width: 100%;
     h4 {
       margin: 0 0 1rem;
       font-size: 1.5rem;
@@ -1296,7 +1297,6 @@
       color: #fff;
       font-size: 1.5rem;
       font-family: Neue Montreal Medium;
-      padding: 0 5rem 0 0;
       a {
         color: #6ad935;
         text-decoration: none;
@@ -1361,20 +1361,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem 0 0;
     width: 100%;
+    .m-icon {
+      max-width: 100%;
+      height: auto;
+      margin: 0 0 -3.35rem;
+      z-index: -1;
+    }
     .smart-contract {
       margin: 0 0 1.5rem;
       position: relative;
       width: 100%;
-      .m-icon {
-        max-width: 9rem;
-        height: 13rem;
-        position: absolute;
-        right: 0;
-        top: -10.5rem;
-        z-index: -1;
-      }
+
       .bg {
         left: 0;
         position: absolute;

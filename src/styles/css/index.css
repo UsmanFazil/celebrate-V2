@@ -297,14 +297,14 @@ nav {
   .navbar-brand img {
     max-width: 10rem; } }
 
-.navbar-light .navbar-toggler-icon {
+.navbar .navbar-toggler-icon {
   background-image: url(../../assets/burgermenu.png) !important; }
 
-.navbar-light .navbar-toggler {
+.navbar .navbar-toggler {
   background-color: transparent;
   border: none;
   padding: 0; }
-  .navbar-light .navbar-toggler:focus {
+  .navbar .navbar-toggler:focus {
     box-shadow: none;
     outline: none; }
 
@@ -493,9 +493,9 @@ nav {
         color: #fff;
         font-size: 1.125rem;
         list-style: none;
-        width: 30%; }
+        width: 50%; }
         .collections .collection-details ul li:nth-child(even) {
-          width: 70%; }
+          width: 50%; }
         .collections .collection-details ul li a {
           color: #6ad935;
           text-decoration: none; }
@@ -617,7 +617,6 @@ nav {
     #ecosystem .eco-cycle a {
       color: #6ad935;
       font-size: 1.285rem;
-      text-transform: uppercase;
       text-decoration: none; }
     #ecosystem .eco-cycle .item-one {
       top: -1.5rem;
@@ -887,10 +886,12 @@ nav {
 #featuredin {
   padding: 5rem 0; }
   #featuredin .feature-item {
+    display: block;
     padding: 1rem;
     margin: 0 0 1.5rem;
     height: 100%;
-    position: relative; }
+    position: relative;
+    text-decoration: none; }
     #featuredin .feature-item .cardbg {
       left: 0;
       position: absolute;
@@ -1188,7 +1189,7 @@ nav {
       color: #6ad935; }
 
 #what-celebrate .desc {
-  width: 72%; }
+  width: 100%; }
   #what-celebrate .desc h4 {
     margin: 0 0 1rem;
     font-size: 1.5rem;
@@ -1198,8 +1199,7 @@ nav {
   #what-celebrate .desc p {
     color: #fff;
     font-size: 1.5rem;
-    font-family: Neue Montreal Medium;
-    padding: 0 5rem 0 0; }
+    font-family: Neue Montreal Medium; }
     #what-celebrate .desc p a {
       color: #6ad935;
       text-decoration: none; }
@@ -1253,19 +1253,16 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 0 0;
   width: 100%; }
+  #what-celebrate .sidebar .m-icon {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 -3.35rem;
+    z-index: -1; }
   #what-celebrate .sidebar .smart-contract {
     margin: 0 0 1.5rem;
     position: relative;
     width: 100%; }
-    #what-celebrate .sidebar .smart-contract .m-icon {
-      max-width: 9rem;
-      height: 13rem;
-      position: absolute;
-      right: 0;
-      top: -10.5rem;
-      z-index: -1; }
     #what-celebrate .sidebar .smart-contract .bg {
       left: 0;
       position: absolute;

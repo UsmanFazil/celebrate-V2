@@ -158,7 +158,7 @@ nav {
   }
 }
 
-.navbar-light {
+.navbar {
   .navbar-toggler-icon {
     background-image: url(../../assets/burgermenu.png) !important;
   }
@@ -167,7 +167,7 @@ nav {
     border: none;
     padding: 0;
     &:focus {
-      box-shadow: none;
+      box-shadow: none; 
       outline: none;
     }
   }

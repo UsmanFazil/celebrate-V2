@@ -4,52 +4,130 @@ import React from "react";
 import Slider from "react-slick";
 // import { Link } from "react-router-dom";
 import { Container } from "reactstrap";
-import minion from "../../assets/minion.png";
+import top1 from "../../assets/top1.png";
+import top2 from "../../assets/top2.png";
+import top3 from "../../assets/top3.png";
+import top4 from "../../assets/top4.png";
+import top5 from "../../assets/top5.png";
+import top6 from "../../assets/top6.png";
+import top7 from "../../assets/top7.png";
+import top8 from "../../assets/top8.png";
+import top9 from "../../assets/top9.png";
+import top10 from "../../assets/top10.png";
+import top11 from "../../assets/top11.png";
+import top12 from "../../assets/top12.png";
+import bottom1 from "../../assets/bottom1.png";
+import bottom2 from "../../assets/bottom2.png";
+import bottom3 from "../../assets/bottom3.png";
+import bottom4 from "../../assets/bottom4.png";
+import bottom5 from "../../assets/bottom5.png";
+import bottom6 from "../../assets/bottom6.png";
+import bottom7 from "../../assets/bottom7.png";
+import bottom8 from "../../assets/bottom8.png";
+import bottom9 from "../../assets/bottom9.png";
+import bottom10 from "../../assets/bottom10.png";
+import bottom11 from "../../assets/bottom11.png";
+import bottom12 from "../../assets/bottom12.png";
+
 const CyberEliteMinions = () => {
-  const CybiezList = [
+  const CybiezListTop = [
     {
       id: '0',
-      img: minion,
+      img: top1,
     },
     {
       id: '1',
-      img: minion,
+      img: top2,
     },
     {
       id: '2',
-      img: minion,
+      img: top3,
     },
     {
       id: '3',
-      img: minion,
+      img: top4,
     },
     {
       id: '4',
-      img: minion,
+      img: top5,
     },
     {
       id: '5',
-      img: minion,
+      img: top6,
     },
     {
       id: '6',
-      img: minion,
+      img: top7,
     },
     {
       id: '7',
-      img: minion,
+      img: top8,
     },
     {
       id: '8',
-      img: minion,
+      img: top9,
     },
     {
       id: '9',
-      img: minion,
+      img: top10,
     },
     {
       id: '10',
-      img: minion,
+      img: top11,
+    },
+    {
+      id: '11',
+      img: top12,
+    },
+  ]
+  const CybiezListBottom = [
+    {
+      id: '0',
+      img: bottom1,
+    },
+    {
+      id: '1',
+      img: bottom2,
+    },
+    {
+      id: '2',
+      img: bottom3,
+    },
+    {
+      id: '3',
+      img: bottom4,
+    },
+    {
+      id: '4',
+      img: bottom5,
+    },
+    {
+      id: '5',
+      img: bottom6,
+    },
+    {
+      id: '6',
+      img: bottom7,
+    },
+    {
+      id: '7',
+      img: bottom8,
+    },
+    {
+      id: '8',
+      img: bottom9,
+    },
+    {
+      id: '9',
+      img: bottom10,
+    },
+    {
+      id: '10',
+      img: bottom11,
+    },
+    {
+      id: '11',
+      img: bottom12,
     },
   ]
   const RTLsettings = {
@@ -130,14 +208,14 @@ const CyberEliteMinions = () => {
         </div>
         <div className="minions-lists">
           <Slider {...RTLsettings}>
-            {CybiezList.map(item =>
+            {CybiezListTop.map(item =>
               <div key={item.id}>
                 <img src={item.img} height="100%" width="100%" alt="Cybiez" />
               </div>
             )}
           </Slider>
           <Slider {...LTRsettings}>
-            {CybiezList.map(item =>
+            {CybiezListBottom.map(item =>
               <div key={item.id}>
                 <img src={item.img} height="100%" width="100%" alt="Cybiez" />
               </div>
