@@ -87,8 +87,8 @@ const FeaturedIn = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 2000,
+    autoplaySpeed: 2000,
     // cssEase: "linear",
     ltr: true,
   };

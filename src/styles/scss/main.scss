@@ -161,6 +161,7 @@
     }
   }
   .title-left {
+    text-align: center;
     width: 100%;
     h2 {
       font-size: 3rem;
@@ -186,7 +187,7 @@
     position: relative;
     .cardbg {
       height: 100%;
-      position: absolute; 
+      position: absolute;
       width: 100%;
       z-index: -1;
     }
@@ -209,7 +210,7 @@
         font-family: Neue Bit Bold;
         margin: 0 0 0.5rem;
         -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: black; 
+        -webkit-text-stroke-color: black;
       }
       span {
         color: #fff;
@@ -770,6 +771,10 @@
           }
           .detail {
             width: 60%;
+            h4 {
+              display: block;
+              text-align: center;
+            }
           }
         }
       }
@@ -849,6 +854,14 @@
       padding: 0 0.75rem;
     }
   }
+  @media (max-width: 767px) {
+    .minions-lists {
+      .before,
+      .after {
+        display: none;
+      }
+    }
+  }
   @media (max-width: 575px) {
     padding: 0;
   }
@@ -873,7 +886,7 @@
     .card-inner {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; 
+      justify-content: space-between;
       border-left: 1px solid #fff;
       height: 100%;
       padding: 0 0 0 1rem;
@@ -1036,7 +1049,7 @@
         .card-inner {
           padding: 2rem 5rem;
           h1 {
-            font-size: 3rem;
+            font-size: 5rem;
           }
           h4 {
             text-align: right;
@@ -2470,5 +2483,11 @@ footer {
   .continue {
     background-color: #33a852;
     width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .slick-slide {
+    padding: 0 0.5rem;
   }
 }
