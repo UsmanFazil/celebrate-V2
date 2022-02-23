@@ -13,6 +13,7 @@ const FeaturedIn = () => {
       source: '- New York Wire',
       by: 'Jenny Davidson',
       desc: 'CelebrateNFT Gives Holders a lot of Reasons to Celebrate Through Its VIP Program and Abundant Rewards',
+      link: 'https://nywire.com/celebratenft-gives-holders-a-lot-of-reasons-to-celebrate-through-its-vip-program-and-abundant-rewards/',
     },
     {
       id: '1',
@@ -20,6 +21,7 @@ const FeaturedIn = () => {
       source: '- Ceoweekly',
       by: 'Shaun Evans',
       desc: 'CelebrateNFT Fostering a Community of Rewards and Gratification with Investors',
+      link: 'https://ceoweekly.com/celebration-nft-fostering-a-community-of-rewards-and-gratification-with-investors/',
     },
     {
       id: '2',
@@ -27,6 +29,7 @@ const FeaturedIn = () => {
       source: '- Market Daily',
       by: ' James Blunt',
       desc: 'CelebrateNFT Bridges the Gap Between the Metaverse and Our World With Real-World Rewards',
+      link: 'https://marketdaily.com/?p=664',
     },
     {
       id: '3',
@@ -34,6 +37,7 @@ const FeaturedIn = () => {
       source: '- New York Weekly',
       by: 'Ryann Pierre',
       desc: 'CelebrateNFT: Virtual Ivestements With Real World Benefits',
+      link: 'https://nyweekly.com/tech/celebratenft-virtual-investments-with-real-world-benefits/',
     },
     {
       id: '4',
@@ -41,6 +45,7 @@ const FeaturedIn = () => {
       source: '- Los Angeles Wire',
       by: 'Johnny Bigg',
       desc: 'CelebrateNFT on Bringing People Together and Building a Community of Enthusiasts',
+      link: 'https://lawire.com/celebratenft-on-bringing-people-together-and-building-a-community-of-enthusiasts/',
     },
     {
       id: '5',
@@ -48,6 +53,7 @@ const FeaturedIn = () => {
       source: '- Medium',
       by: 'Nicole Guerrero',
       desc: 'NFT Exclusive Marketplace, CelebrateNFT Anounces Launch Date',
+      link: 'https://nicole-guerrero.medium.com/nft-exclusive-marketplace-celebratenft-announces-launch-date-4486b788bca7',
     },
     {
       id: '6',
@@ -55,6 +61,7 @@ const FeaturedIn = () => {
       source: '- US Reporter',
       by: 'Brittany Meyers',
       desc: 'Introducing CelebrateNFT as the Metaverse Expands',
+      link: 'https://usreporter.com/introducing-celebrate-nfts-as-the-metaverse-expands/',
     },
     {
       id: '7',
@@ -62,6 +69,7 @@ const FeaturedIn = () => {
       source: '- The Chicago Journal',
       by: 'Daniel Ruiz',
       desc: 'CelebrateNFT Drives Inclusivity Despite the Expanding Metaverse',
+      link: 'https://thechicagojournal.com/celebrate-nfts-drives-inclusivity-despite-the-expanding-metaverse/',
     },
     {
       id: '8',
@@ -69,6 +77,7 @@ const FeaturedIn = () => {
       source: '- US Insider',
       by: 'Zachary Latham',
       desc: 'CelebrateNFT: A Commerical NFT Hub Where the Universe and Metaverse Collude',
+      link: 'https://usinsider.com/celebratenft-a-commercial-nft-hub-where-the-universe-and-metaverse-collude/',
     },
   ]
   const LTRsettings = {
@@ -78,8 +87,8 @@ const FeaturedIn = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 2000,
+    autoplaySpeed: 2000,
     // cssEase: "linear",
     ltr: true,
   };
@@ -93,7 +102,7 @@ const FeaturedIn = () => {
           <Row>
             {FeaturesList.map(item =>
               <Col xl={4} lg={4} md={6} sm={6} xs={12} key={item.id} className="mb-4">
-                <div className="feature-item">
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="feature-item">
                   <img src={featurecard} height="100%" width="100%" alt="feature card" className="cardbg" />
                   <div className="card-inner">
                     <div>
@@ -105,7 +114,7 @@ const FeaturedIn = () => {
                       <p>{item.by}</p>
                     </div>
                   </div>
-                </div>
+                </a>
               </Col>
             )}
           </Row>
@@ -113,7 +122,7 @@ const FeaturedIn = () => {
         <div className="mobile">
           <Slider {...LTRsettings}>
             {FeaturesList.map(item =>
-              <div className="feature-item" key={item.id}>
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className="feature-item" key={item.id}>
                 <img src={featurecard} height="100%" width="100%" alt="feature card" className="cardbg" />
                 <div className="card-inner">
                   <div>
@@ -125,7 +134,7 @@ const FeaturedIn = () => {
                     <p>{item.by}</p>
                   </div>
                 </div>
-              </div>
+              </a>
             )}
           </Slider>
         </div>

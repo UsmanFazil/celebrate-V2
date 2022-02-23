@@ -38,8 +38,8 @@ const Collections = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 2000,
+    autoplaySpeed: 2000,
     // cssEase: "linear",
     ltr: true,
   };
@@ -83,13 +83,13 @@ const Collections = () => {
                   <>
                     <ul>
                       <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
-                      <li>- Upgrade you Cybiez</li>
+                      <li>- Access to upgrade your Cybiez</li>
                       <li>- Pre mint Cybiez public sale</li>
                       <li>- ETH giveaways</li>
                       <li>- VIP Lounge access</li>
                       <li>- Community DAO</li>
                       <li></li>
-                      <li>- VIP access to CelebrateNFT platform</li>
+                      <li>- VIP access to CelebrateNFT ecosystem</li>
                     </ul>
                     <div className="outcomes">
                       <p>Total Supply: <span>2,000</span></p>
@@ -100,10 +100,9 @@ const Collections = () => {
                   <>
                     <ul>
                       <li>- 1/1 unique identity</li>
-                      <li>- upgrade your Cybiez to earn more and do more </li>
-                      <li>- Yield <Link to="/what-is-celebrate">$CELEBRATE</Link> daily</li>
-                      <li>Full commercial rights</li>
-                      <li></li>
+                      <li>- Use VIP token & <Link to="/what-is-celebrate">$Fandom</Link> to upgrade your Cybiez to earn more and do more </li>
+                      <li>- Yield daily <Link to="/what-is-celebrate">$Fandom</Link> </li>
+                      <li>- Full commercial rights</li>
                       <li>- Community DAO</li>
                     </ul>
                     <div className="outcomes">
@@ -152,13 +151,13 @@ const Collections = () => {
                     <>
                       <ul>
                         <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
-                        <li>- Upgrade you Cybiez</li>
+                        <li>- Access to upgrade your Cybiez</li>
                         <li>- Pre mint Cybiez public sale</li>
                         <li>- ETH giveaways</li>
                         <li>- VIP Lounge access</li>
                         <li>- Community DAO</li>
                         <li></li>
-                        <li>- VIP access to CelebrateNFT platform</li>
+                        <li>- VIP access to CelebrateNFT ecosystem</li>
                       </ul>
                       <div className="outcomes">
                         <p>Total Supply: <span>2,000</span></p>
@@ -169,10 +168,9 @@ const Collections = () => {
                     <>
                       <ul>
                         <li>- 1/1 unique identity</li>
-                        <li>- upgrade your Cybiez to earn more and do more </li>
-                        <li>- Yield <Link to="/what-is-celebrate">$CELEBRATE</Link> daily</li>
-                        <li>Full commercial rights</li>
-                        <li></li>
+                        <li>- Use VIP token & <Link to="/what-is-celebrate">$Fandom</Link> to upgrade your Cybiez to earn more and do more </li>
+                        <li>- Yield daily <Link to="/what-is-celebrate">$Fandom</Link> </li>
+                        <li>- Full commercial rights</li>
                         <li>- Community DAO</li>
                       </ul>
                       <div className="outcomes">

@@ -19,6 +19,7 @@ const Roadmap = () => {
       year: '2022',
       point1: '/VIP Cybiez Airdrop',
       point2: '/Cybiez public sale',
+      point3: '/IRL Cybiez Merch',
     },
     {
       id: '2',
@@ -27,7 +28,7 @@ const Roadmap = () => {
       point1: '/Launch ',
       point2: '/On Chain Token Swap',
       point3: '/Token Liquidity pool',
-      celebratelink: '$CELEBRATE',
+      celebratelink: '$Fandom',
     },
     {
       id: '3',
@@ -35,6 +36,7 @@ const Roadmap = () => {
       year: '2022',
       point1: '/Launch Marketplace',
       point2: '/Metamerch collab drops',
+      point3: '/First Cybiez Recruitment',
     },
   ]
   return (
@@ -60,7 +62,7 @@ const Roadmap = () => {
                       <Link to="/what-is-celebrate">&nbsp;{item.celebratelink}</Link>
                     ) : ''}</p>
                     <p>{item.point2}</p>
-                    {item.id === '2' ? (
+                    {item.id !== '0' ? (
                       <p>{item.point3}</p>
                     ) : ''}
                   </div>

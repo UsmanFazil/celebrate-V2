@@ -3,8 +3,12 @@ import { Row, Col, Container } from "reactstrap";
 import Footer from "../../components/Common/Footer";
 import MenuBar from "../../components/Common/MenuBar";
 import { Link } from "react-router-dom";
-import icon1 from "../../assets/icon1.png";
-import icon2 from "../../assets/icon2.png";
+import item1 from "../../assets/item1.png";
+import item2 from "../../assets/item2.png";
+import item3 from "../../assets/item3.png";
+import item4 from "../../assets/item4.png";
+import item5 from "../../assets/item5.png";
+import fandomparty from "../../assets/fandom-party.png";
 import line from "../../assets/line.png";
 import scbg from "../../assets/scbg.png";
 import cbg from "../../assets/cbg.png";
@@ -13,41 +17,41 @@ const WhatCelebrate = () => {
   const CatList = [
     {
       id: '0',
-      img: icon1,
+      img: item1,
       title: '- Yield',
-      desc1: 'Every CyberElite yields 15',
+      desc1: 'Every Cybiez yields 15',
       desc2: 'tokens everyday for their hard work in creating the metaverse.',
-      celebratelink: '$CELEBRATE',
+      celebratelink: '$Fandom',
     },
     {
       id: '1',
-      img: icon2,
+      img: item2,
       title: '- Customize',
       desc1: 'Use',
-      desc2: 'to add a custom name or backstory to the blockchain for your CyberElite.',
-      celebratelink: '$CELEBRATE',
+      desc2: 'to add a custom name or backstory to the blockchain for your Cybiez.',
+      celebratelink: '$Fandom',
     },
     {
       id: '2',
-      img: icon1,
+      img: item3,
       title: '- Upgrade',
       desc1: 'Hold ONE VIP token and burn',
-      desc2: 'to upgrade your CyberElite to earn more and do more.',
-      celebratelink: '$CELEBRATE',
+      desc2: 'to upgrade your Cybiez to earn more and do more.',
+      celebratelink: '$Fandom',
     },
     {
       id: '3',
-      img: icon2,
+      img: item4,
       title: '- Vote',
       desc2: 'is also a Governance token to our community DAO',
-      celebratelink: '$CELEBRATE',
+      celebratelink: '$Fandom',
     },
     {
       id: '4',
-      img: icon2,
+      img: item5,
       title: '- Shop',
       desc2: 'will be used throughout our entire marketplace to shop metamerch',
-      celebratelink: '$CELEBRATE',
+      celebratelink: '$Fandom',
     },
   ]
   return (
@@ -58,19 +62,19 @@ const WhatCelebrate = () => {
           <Row>
             <Col lg={12}>
               <div className="heading">
-                <h1>What is <span>$CELEBRATE</span></h1>
-              </div>
-              <div className="desc">
-                <h4>TOKENOMICS TO FUEL THE PARTY</h4>
-                <p><Link to="/what-is-celebrate">$CELEBRATE</Link> will be used throughout our entire CelebrateNFT ecosystem and as we expand into the metaverse more utility will be added. The CyberElites are on a mission to create the future of celebration in the metaverse and <Link to="/what-is-celebrate">$CELEBRATE</Link> allows us to fuel our ecosystem the best way, on the blockchain. </p>
+                <h1>What is <span>$Fandom</span></h1>
               </div>
             </Col>
           </Row>
           <Row>
             <Col lg={9} md={8} sm={12} xs={12}>
+              <div className="desc">
+                <h4>TOKENOMICS TO FUEL THE PARTY</h4>
+                <p><Link to="/what-is-celebrate">$Fandom</Link> will be used throughout our entire CelebrateNFT ecosystem and as we expand into the metaverse more utility will be added. The Cybiez are on a mission to create the future of celebration in the metaverse and <Link to="/what-is-celebrate">$Fandom</Link> allows us to fuel our ecosystem the best way, on the blockchain. </p>
+              </div>
               <div className="cat-list">
                 {CatList.map(item =>
-                  <div className="item">
+                  <div className="item" key={item.id}>
                     <div className="icon">
                       <img src={item.img} height="100%" width="100" alt={item.title} className="dn-res" />
                       <img src={line} height="100%" width="5" alt="line" className="vl" />
@@ -85,8 +89,8 @@ const WhatCelebrate = () => {
             </Col>
             <Col lg={3} md={4} sm={12} xs={12}>
               <div className="sidebar">
+                <img src={fandomparty} height="100%" width="100%" alt="fandom party" className="m-icon" />
                 <div className="smart-contract">
-                  <img src={icon1} height="100%" width="100%" alt="icon" className="m-icon" />
                   <img src={scbg} height="100%" width="100%" alt="bg" className="bg" />
                   <div className="inner">
                     <p>Smart Contract</p>
@@ -96,8 +100,8 @@ const WhatCelebrate = () => {
                 <div className="cb-intro">
                   <img src={cbg} height="100%" width="100%" alt="bg" className="bg" />
                   <div className="inner">
-                    <p><Link to="/what-is-celebrate">$CELEBRATE</Link> is the utility token that fuels the CelebrateNFT ecosystem. It is NOT an investment and has NO economic value.</p>
-                    <p>Each CyberElite is able to claim 15 <Link to="/what-is-celebrate">$CELEBRATE</Link> tokens per day for a period of ten years. CyberElites will produce total of 18,248,175 <Link to="/what-is-celebrate">$CELEBRATE</Link> tokens per year, over a period of ten years.</p>
+                    <p><Link to="/what-is-celebrate">$Fandom</Link> is the utility token that fuels the CelebrateNFT ecosystem. It is NOT an investment and has NO economic value.</p>
+                    <p>Each Cybie is able to Yield <Link to="/what-is-celebrate">$Fandom</Link> tokens /24 hrs for a period of ten years.</p>
                   </div>
                 </div>
               </div>
@@ -111,7 +115,7 @@ const WhatCelebrate = () => {
                   <h1>Marketplace</h1>
                 </div>
                 <h4>[Coming soon]</h4>
-                <p>Our CyberElites strive to provide a platform to buy, sell, trade digital assets that provide the ultimate experience in the metaverse. </p>
+                <p>Our Cybiez strive to provide a platform to buy, sell, trade digital assets that provide the ultimate experience in the metaverse. </p>
               </div>
             </Col>
           </Row>
