@@ -4,11 +4,6 @@ import App from "./app";
 import * as serviceWorker from "./serviceWorker";
 import store from "./store/configureStore";
 import { Provider } from "react-redux";
-import { localeSet } from './store/actions/locale'
-
-if(localStorage.alhubLang) {
-  store.dispatch(localeSet(localStorage.alhubLang));
-}
 
 ReactDOM.render(
   <Provider store={store}>

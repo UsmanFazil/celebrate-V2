@@ -9,8 +9,6 @@ const development = '';
 const production = '';
 const staging = '';
 
-
-
 let ApiUrl =''; 
 // let ApiSocket =''; 
 

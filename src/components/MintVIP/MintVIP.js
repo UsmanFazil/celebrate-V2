@@ -1,9 +1,10 @@
 // Home Page #2 Collections Component
-
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { BsArrowUpRightCircle } from 'react-icons/bs';
+import detectProvider from '../../components/detectProvider';
 import minttoken from "../../assets/mint-token.png";
+
 const MintVIP = () => {
   return (
     <section id="mint-vip">
@@ -18,8 +19,8 @@ const MintVIP = () => {
                     <p>ONE token to provide interoperability throughout the entire metaverse by giving you access to avatars, upgrade Cybiez, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!</p>
                   </div>
                   <div className="bottom">
-                    <span>Reserve your free Cybiez now!</span>
-                    <Button className="btn-mintvip">
+                    <span>Reserve your free CyberElite now!</span>
+                    <Button className="btn-mintvip" onClick={() => detectProvider()}>
                       Mint VIP
                       <BsArrowUpRightCircle />
                     </Button>

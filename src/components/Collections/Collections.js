@@ -10,6 +10,8 @@ import Cyberelite from "../../assets/cyberelite.png";
 import logo from "../../assets/logo.png";
 import cardbg from "../../assets/cardbg.png";
 import star from "../../assets/star.png";
+import detectProvider from '../detectProvider'
+
 const Collections = () => {
   const CollectionsList = [
     {
@@ -186,8 +188,8 @@ const Collections = () => {
         <Row>
           <Col lg={12}>
             <div className="become-vip">
-              <p><img src={star} height="24" width="30" alt="star" />Become a VIP token holder to get your free Cybiez airdrop!</p>
-              <Button className="btn-mintvip">
+              <p><img src={star} height="24" width="30" alt="star" />Become a VIP token holder and claim your free CyberElite!</p>
+              <Button className="btn-mintvip" onClick={() => detectProvider()}>
                 Mint VIP
                 <BsArrowUpRightCircle />
               </Button>

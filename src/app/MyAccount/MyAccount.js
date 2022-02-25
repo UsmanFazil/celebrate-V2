@@ -5,6 +5,7 @@ import { Col, Container, Row, TabContent, TabPane, Nav, NavItem, NavLink, Button
 // import { Link } from 'react-router-dom';
 import classnames from 'classnames';
 import MenuBar from "../../components/Common/MenuBar";
+import detectProvider from '../../components/detectProvider'
 import probg from '../../assets/probg.png';
 import copy from '../../assets/copy.png';
 import vipnft from '../../assets/vipnft.png';
@@ -125,7 +126,7 @@ const MyAccount = () => {
                                                         <h4>
                                                             Mint Edition #1 VIP for exclusive Benefits!
                                                         </h4>
-                                                        <Button className="btn-mintvip">
+                                                        <Button className="btn-mintvip" onClick={() => detectProvider()}>
                                                             Mint VIP <FiArrowRightCircle />
                                                         </Button>
                                                     </div>
