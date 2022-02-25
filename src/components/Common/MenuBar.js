@@ -58,24 +58,24 @@ function MenuBar() {
                     </Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/">
+                    <Link to="/tokenomics">
                       Tokenomics
                     </Link>
                   </NavItem>
                   <NavItem>
-                    <Link to="/">
+                    <a href="https://twitter.com/CelebrateNFT" target="_blank" rel="noopener noreferrer">
                       Twitter
-                    </Link>
+                    </a>
                   </NavItem>
                   <NavItem>
-                    <Link to="/">
+                    <a href="https://www.instagram.com/celebratenft/" target="_blank" rel="noopener noreferrer">
                       Instagram
-                    </Link>
+                    </a>
                   </NavItem>
                   <NavItem>
-                    <Link to="/">
+                    <a href="https://discord.gg/88TANXEbGh" target="_blank" rel="noopener noreferrer">
                       Discord
-                    </Link>
+                    </a>
                   </NavItem>
                   <NavItem id="connectwallet">
                     <Link to="/connect-wallet" className="connect-wallet">

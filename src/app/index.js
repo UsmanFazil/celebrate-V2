@@ -33,7 +33,7 @@ const App = () => {
     <Router history={history}>
       <Switch>
         <Route path="/" exact component={LandingPage} />
-        <Route path="/what-is-celebrate" exact component={WhatCelebrate} />
+        <Route path="/tokenomics" exact component={WhatCelebrate} />
         <Route path="/connect-wallet" exact component={ConnectWallet} />
         <Route path="/my-account" exact component={MyAccount} />
         <Route path="/product" exact component={Product} />
