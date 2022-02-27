@@ -1,6 +1,6 @@
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row, TabContent, TabPane, Nav, NavItem, NavLink, Button } from 'reactstrap';
 // import { Link } from 'react-router-dom';
 import classnames from 'classnames';
@@ -14,12 +14,33 @@ import { FiArrowRightCircle } from 'react-icons/fi';
 const MyAccount = () => {
     const [activeTab, setActiveTab] = useState('1');
     const [activeTabb, setActiveTabb] = useState('01');
+    const [isLogged, setIsLogged] = useState('')
+
     const toggle = (tab) => {
         if (activeTab !== tab) setActiveTab(tab);
     }
+
+    async function checkIfWalletIsConnected() {
+        if (window.ethereum) {
+          const accounts = await window.ethereum.request({
+            method: "eth_accounts",
+          });
+    
+          if (accounts.length > 0) {
+            const account = accounts[0];
+            setIsLogged(account);
+            return;
+          }
+        }
+      }
+
     const togglee = (tabb) => {
         if (activeTabb !== tabb) setActiveTabb(tabb);
     }
+
+    useEffect(() => {
+        checkIfWalletIsConnected();
+      }, []);
 
     return (
         <React.Fragment>
@@ -32,7 +53,7 @@ const MyAccount = () => {
                                 <div className="tab_res">
                                     <div className="wallet">
                                         <div className="address">
-                                            {'0x278992821842c0a70'.slice(0, 15) + `...` + '0x278992821842c0a70'.slice(-1 * 4)}
+                                            {isLogged.slice(0, 15) + `...` + isLogged.slice(-1 * 4)}
                                         </div>
                                         <Button>
                                             <img src={copy} height="100%" width="100%" alt="copy" />
@@ -64,7 +85,7 @@ const MyAccount = () => {
                                 <div className="tab_desk">
                                     <div className="wallet">
                                         <div className="address">
-                                            {'0x278992821842c0a70'.slice(0, 15) + `...` + '0x278992821842c0a70'.slice(-1 * 4)}
+                                            {isLogged.slice(0, 15) + `...` + isLogged.slice(-1 * 4)}
                                         </div>
                                         <Button>
                                             <img src={copy} height="100%" width="100%" alt="copy" />
