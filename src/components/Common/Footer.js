@@ -24,25 +24,17 @@ class Footer extends React.Component {
             <div className="footer-social-link">
               <ul>
                 <li>
-                  <a href="/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://twitter.com/CelebrateNFT" target="_blank" rel="noopener noreferrer">
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://www.instagram.com/celebratenft/" target="_blank" rel="noopener noreferrer">
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://discord.gg/88TANXEbGh" target="_blank" rel="noopener noreferrer">
                     Discord
                   </a>
                 </li>
