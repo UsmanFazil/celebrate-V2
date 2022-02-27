@@ -24,13 +24,13 @@ const Ecosystem = () => {
               </p>
               <p className="item-two">
                 Yield Daily &nbsp;
-                <Link to="/what-is-celebrate">$Fandom</Link>
+                <Link to="/">$Fandom</Link>
               </p>
               <p className="item-three">
-                Hold ONE VIP token & burn <Link to="/what-is-celebrate">$Fandom</Link> to upgrade your Cybiez identity to earn more and do more!
+                Hold ONE VIP token & burn <Link to="/">$Fandom</Link> to upgrade your Cybiez identity to earn more and do more!
               </p>
               <p className="item-four">
-                Shop for Metamerch, events, and much more in our marketplace using <Link to="/what-is-celebrate">$Fandom</Link>
+                Shop for Metamerch, events, and much more in our marketplace using <Link to="/">$Fandom</Link>
               </p>
               <p className="item-five">
                 Set up your own shop by using our platform to create and sell your own custom Metamerch.

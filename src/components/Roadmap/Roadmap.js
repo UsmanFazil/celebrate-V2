@@ -8,23 +8,23 @@ const Roadmap = () => {
   const RoadmapList = [
     {
       id: '0',
-      q: 'Q1',
-      year: '2022',
+      q: 'Phase',
+      year: '1',
       point1: '/Website Revamp',
       point2: '/VIP edition #1 sale',
     },
     {
       id: '1',
-      q: 'Q2',
-      year: '2022',
+      q: 'Phase',
+      year: '2',
       point1: '/VIP Cybiez Airdrop',
       point2: '/Cybiez public sale',
       point3: '/IRL Cybiez Merch',
     },
     {
       id: '2',
-      q: 'Q3',
-      year: '2022',
+      q: 'Phase',
+      year: '3',
       point1: '/Launch ',
       point2: '/On Chain Token Swap',
       point3: '/Token Liquidity pool',
@@ -32,8 +32,8 @@ const Roadmap = () => {
     },
     {
       id: '3',
-      q: 'Q4',
-      year: '2022',
+      q: 'Phase',
+      year: '4',
       point1: '/Launch Marketplace',
       point2: '/Metamerch collab drops',
       point3: '/First Cybiez Recruitment',
@@ -59,7 +59,7 @@ const Roadmap = () => {
                   </div>
                   <div className="points">
                     <p>{item.point1}  {item.id === '2' ? (
-                      <Link to="/what-is-celebrate">&nbsp;{item.celebratelink}</Link>
+                      <Link to="/">&nbsp;{item.celebratelink}</Link>
                     ) : ''}</p>
                     <p>{item.point2}</p>
                     {item.id !== '0' ? (
