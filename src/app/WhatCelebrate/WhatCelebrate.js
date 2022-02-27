@@ -19,8 +19,8 @@ const WhatCelebrate = () => {
       id: '0',
       img: item1,
       title: '- Yield',
-      desc1: 'Every Cybiez yields 15',
-      desc2: 'tokens everyday for their hard work in creating the metaverse.',
+      desc1: 'Every Cybie yields',
+      desc2: ' tokens everyday for putting their unique talents to work',
       celebratelink: '$Fandom',
     },
     {
@@ -70,7 +70,7 @@ const WhatCelebrate = () => {
             <Col lg={9} md={8} sm={12} xs={12}>
               <div className="desc">
                 <h4>TOKENOMICS TO FUEL THE PARTY</h4>
-                <p><Link to="/what-is-celebrate">$Fandom</Link> will be used throughout our entire CelebrateNFT ecosystem and as we expand into the metaverse more utility will be added. The Cybiez are on a mission to create the future of celebration in the metaverse and <Link to="/what-is-celebrate">$Fandom</Link> allows us to fuel our ecosystem the best way, on the blockchain. </p>
+                <p><Link to="/">$Fandom</Link> will be used throughout our entire CelebrateNFT ecosystem and as we expand into the metaverse more utility will be added. The Cybiez are on a mission to create the future of celebration in the metaverse and <Link to="/">$Fandom</Link> allows us to fuel our ecosystem the best way, on the blockchain. </p>
               </div>
               <div className="cat-list">
                 {CatList.map(item =>
@@ -100,8 +100,8 @@ const WhatCelebrate = () => {
                 <div className="cb-intro">
                   <img src={cbg} height="100%" width="100%" alt="bg" className="bg" />
                   <div className="inner">
-                    <p><Link to="/what-is-celebrate">$Fandom</Link> is the utility token that fuels the CelebrateNFT ecosystem. It is NOT an investment and has NO economic value.</p>
-                    <p>Each Cybie is able to Yield <Link to="/what-is-celebrate">$Fandom</Link> tokens /24 hrs for a period of ten years.</p>
+                    <p><Link to="/">$Fandom</Link> is the utility token that fuels the CelebrateNFT ecosystem. It is NOT an investment and has NO economic value.</p>
+                    <p>Each Cybie is able to Yield <Link to="/">$Fandom</Link> tokens /24 hrs for a period of ten years.</p>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const WhatCelebrate = () => {
               <div className="marketplace">
                 <div className="cft-market">
                   <img src={logo} height="100%" width="100%" alt="celebrate" />
-                  <h1>Marketplace</h1>
+                  <h1>MetaMerch Shops</h1>
                 </div>
                 <h4>[Coming soon]</h4>
                 <p>Our Cybiez strive to provide a platform to buy, sell, trade digital assets that provide the ultimate experience in the metaverse. </p>

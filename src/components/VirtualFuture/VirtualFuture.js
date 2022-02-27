@@ -87,19 +87,20 @@ const VirtualFuture = () => {
                             {item.title}
                           </>)
                         } </h4>
-                      {item.id === '2' ? (
-                        <>
-                          <p>{item.desc} <Link to="#">{item.celebrate_link}</Link> {item.desc2}</p>
-                          <p>{item.line}</p>
-                        </>
-                      ) :
-                        item.id === '4' ? (
+                      <div className="desc">
+                        {item.id === '2' ? (
                           <>
-                            <p>{item.desc} <Link to="#">{item.celebrate_link}</Link></p>
+                            <p>{item.desc} <Link to="#">{item.celebrate_link}</Link> {item.desc2} {item.line}</p>
                           </>
-                        ) : (
-                          <p>{item.desc}</p>
-                        )}
+                        ) :
+                          item.id === '4' ? (
+                            <>
+                              <p>{item.desc} <Link to="#">{item.celebrate_link}</Link></p>
+                            </>
+                          ) : (
+                            <p>{item.desc}</p>
+                          )}
+                      </div>
                     </div>
                   </div>
                 )}

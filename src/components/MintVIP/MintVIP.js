@@ -15,11 +15,11 @@ const MintVIP = () => {
               <div className="mv-content">
                 <div className="inner">
                   <div>
-                    <h4>Mint your Edition #1 VIP NFT</h4>
+                    <h4>Mint your VIP Mint Pass NFT</h4>
                     <p>ONE token to provide interoperability throughout the entire metaverse by giving you access to avatars, upgrade Cybiez, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!</p>
                   </div>
                   <div className="bottom">
-                    <span>Reserve your free CyberElite now!</span>
+                    <span>Reserve your free Cybiez now!</span>
                     <Button className="btn-mintvip" onClick={() => detectProvider()}>
                       Mint VIP
                       <BsArrowUpRightCircle />

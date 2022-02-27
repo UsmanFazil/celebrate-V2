@@ -14,17 +14,17 @@ const FAQ = () => {
   const FAQList = [
     {
       id: 'a',
-      question: 'What is the edition #1 VIP?',
-      answer: 'CelebrateNFT edition #1 VIP membership is ONE token to provide interoperability throughout the entire metaverse by giving you access to avatars, upgrade Cybiez, insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!',
+      question: 'What is the VIP Mint Pass?',
+      answer: 'CelebrateNFT VIP Mint Pass membership is ONE token to provide interoperability throughout the entire metaverse by giving you access to avatars, upgrade Cybiez, insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!',
     },
     {
       id: 'b',
       question: 'Do VIP holders get a free Cybiez?',
-      answer: 'Yes, all 2,000 edition #1 VIP token holders will receive a FREE Cybiez airdrop!',
+      answer: 'Yes, all 2,000 VIP Mint Pass token holders will receive a FREE Cybiez airdrop!',
     },
     {
       id: 'c',
-      question: 'How much does the edition #1 VIP NFT cost?',
+      question: 'How much does the VIP Mint Pass NFT cost?',
       answer: '.025 ETH',
     },
     {

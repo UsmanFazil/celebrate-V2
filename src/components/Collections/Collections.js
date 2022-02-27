@@ -5,8 +5,8 @@ import { Container, Row, Col, Button } from "reactstrap";
 import { BsArrowUpRightCircle } from 'react-icons/bs';
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import EditionVip from "../../assets/edition-vip.jpg";
-import Cyberelite from "../../assets/cyberelite.png";
+import EditionVip from "../../assets/vipnft.png";
+import cybiez from "../../assets/cybiez.png";
 import logo from "../../assets/logo.png";
 import cardbg from "../../assets/cardbg.png";
 import star from "../../assets/star.png";
@@ -17,14 +17,16 @@ const Collections = () => {
     {
       id: '0',
       img: EditionVip,
-      title: 'Edition #1 VIP',
+      price: '.025',
+      title: 'VIP Mint Pass',
       quantity: '2,000',
-      subtitle: 'Edition #1 VIP',
-      desc: 'CelebrateNFT edition #1 VIP membership is apart of our collection of 10,000 VIP tokens broken down into 5 editions. Each token provides interoperability throughout the entire metaverse by giving you access to avatars, Upgrade your Cybiez, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!',
+      subtitle: 'VIP Mint Pass',
+      desc: 'CelebrateNFT VIP Mint Pass membership is apart of our collection of 10,000 VIP tokens broken down into 5 editions. Each token provides interoperability throughout the entire metaverse by giving you access to avatars, Upgrade your Cybiez, Insane metaverse experiences, MetaMerch, massive giveaways, virtual land access, activate discounts, and much more!',
     },
     {
       id: '1',
-      img: Cyberelite,
+      img: cybiez,
+      price: '.08',
       title: 'Cybiez',
       quantity: '5,555',
       subtitle: 'Cybiez',
@@ -57,7 +59,7 @@ const Collections = () => {
                 <div className="card-inner">
                   <div className="top">
                     <p>{item.title}</p>
-                    <span>.02 ETH</span>
+                    <span>{item.price} ETH</span>
                   </div>
                   <div className="card-img">
                     <img src={item.img} height="100%" width="100%" alt="Edition Vip" />
@@ -84,11 +86,11 @@ const Collections = () => {
                     <ul>
                       <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
                       <li>- Access to upgrade your Cybiez</li>
+                      <li>- <Link to="#">FREE Cybiez decentraland wearable</Link></li>
                       <li>- Pre mint Cybiez public sale</li>
                       <li>- ETH giveaways</li>
                       <li>- VIP Lounge access</li>
                       <li>- Community DAO</li>
-                      <li></li>
                       <li>- VIP access to CelebrateNFT ecosystem</li>
                     </ul>
                     <div className="outcomes">
@@ -100,10 +102,11 @@ const Collections = () => {
                   <>
                     <ul>
                       <li>- 1/1 unique identity</li>
-                      <li>- Use VIP token & <Link to="/what-is-celebrate">$Fandom</Link> to upgrade your Cybiez to earn more and do more </li>
-                      <li>- Yield daily <Link to="/what-is-celebrate">$Fandom</Link> </li>
+                     
+                      <li>- Yield daily <Link to="/">$Fandom</Link> </li>
                       <li>- Full commercial rights</li>
                       <li>- Community DAO</li>
+                      <li>- Use VIP token & <Link to="/">$Fandom</Link> to upgrade your Cybiez to earn more and do more </li>
                     </ul>
                     <div className="outcomes">
                       <p>Total Supply: <span>5,555</span></p>
@@ -125,7 +128,7 @@ const Collections = () => {
                   <div className="card-inner">
                     <div className="top">
                       <p>{item.title}</p>
-                      <span>.02 ETH</span>
+                      <span>{item.price} ETH</span>
                     </div>
                     <div className="card-img">
                       <img src={item.img} height="100%" width="100%" alt="Edition Vip" />
@@ -152,11 +155,11 @@ const Collections = () => {
                       <ul>
                         <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
                         <li>- Access to upgrade your Cybiez</li>
+                        <li>- <Link to="#">FREE Cybiez decentraland wearable</Link></li>
                         <li>- Pre mint Cybiez public sale</li>
                         <li>- ETH giveaways</li>
                         <li>- VIP Lounge access</li>
                         <li>- Community DAO</li>
-                        <li></li>
                         <li>- VIP access to CelebrateNFT ecosystem</li>
                       </ul>
                       <div className="outcomes">
@@ -168,10 +171,11 @@ const Collections = () => {
                     <>
                       <ul>
                         <li>- 1/1 unique identity</li>
-                        <li>- Use VIP token & <Link to="/what-is-celebrate">$Fandom</Link> to upgrade your Cybiez to earn more and do more </li>
-                        <li>- Yield daily <Link to="/what-is-celebrate">$Fandom</Link> </li>
+                        
+                        <li>- Yield daily <Link to="/">$Fandom</Link> </li>
                         <li>- Full commercial rights</li>
                         <li>- Community DAO</li>
+                        <li>- Use VIP token & <Link to="/">$Fandom</Link> to upgrade your Cybiez to earn more and do more </li>
                       </ul>
                       <div className="outcomes">
                         <p>Total Supply: <span>5,555</span></p>
@@ -188,7 +192,7 @@ const Collections = () => {
         <Row>
           <Col lg={12}>
             <div className="become-vip">
-              <p><img src={star} height="24" width="30" alt="star" />Become a VIP token holder and claim your free CyberElite!</p>
+              <p><img src={star} height="24" width="30" alt="star" />Become a VIP token holder to get your free Cybiez airdrop!</p>
               <Button className="btn-mintvip" onClick={() => detectProvider()}>
                 Mint VIP
                 <BsArrowUpRightCircle />
