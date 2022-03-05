@@ -8,10 +8,8 @@ const address = await web3.eth.getAccounts();
 
 // function to get user NFT balance
 export const getUserBalance = async () => {
-
     const nftContract = new ethers.Contract(nftContractAddress, nftContractAbi, signer);
     const nftAmount = await nftContract.balanceOf(address[0]);
-
     return nftAmount;
 };
 

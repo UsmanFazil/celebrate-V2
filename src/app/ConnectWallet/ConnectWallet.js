@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import { Row, Col, Button, Container } from 'reactstrap';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
-import { useSelector, useDispatch } from 'react-redux';
 import MenuBar from '../../components/Common/MenuBar';
 import history from '../../components/Common/history';
 import cone from "../../assets/cone.png";
