@@ -2,26 +2,16 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import { Row, Col, Button, Container } from 'reactstrap';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
-import { useSelector, useDispatch } from 'react-redux';
 import MenuBar from '../../components/Common/MenuBar';
 import history from '../../components/Common/history';
 import cone from "../../assets/cone.png";
 import celebratecircle from "../../assets/celebratecircle.png";
 import celebratecirclemob from "../../assets/celebratecirclemob.png";
-import { increment } from '../../store/actions';
 import Web3 from 'web3/dist/web3.min.js'
 
 const ConnectWallet = () => {
-    const counter = useSelector(state => state.counter);
-    const isLogged = useSelector(state => state.isLogged)
-    const dispatch = useDispatch();
-    const [isConnecting, setIsConnecting] = useState(false);
     const [provider, setProvider] = useState(window.ethereum);
-    const [isMetaMaskInstalled, setIsMetaMaskInstalled] = useState(false);
-    const [isConnected, setIsConnected] = useState(false);
     const [currentAccount, setCurrentAccount] = useState(null);
-    const [web3, setWeb3] = useState(null);
-
 
     useEffect(() => {
         setProvider(detectProvider());
@@ -40,11 +30,9 @@ const ConnectWallet = () => {
     }
 
     const onLoginHandler = async () => {
-        setIsConnecting(true);
         await provider.request({
             method: "eth_requestAccounts"
         });
-        setIsConnecting(false);
         connectWallet(provider);
     }
 
@@ -57,11 +45,7 @@ const ConnectWallet = () => {
             console.log("Please connect to metamask!!")
         } else if (accounts[0] !== currentAccount) {
             setProvider(provider);
-            setWeb3(web3)
             setCurrentAccount(accounts[0])
-            dispatch({type: 'INCREMENT', payload: accounts[0]});
-            setIsConnected(true);
-            localStorage.setItem("Token",accounts[0])
             history.push("/product");
         }
     }
@@ -91,7 +75,7 @@ const ConnectWallet = () => {
                                 <div className="connect">
                                     <p>Connect to your wallet </p>
                                     <Button className="btn-connect" onClick={onLoginHandler}>
-                                        Connect {currentAccount}
+                                        Connect 
                                         <BsArrowUpRightCircle />
                                     </Button>
                                 </div>

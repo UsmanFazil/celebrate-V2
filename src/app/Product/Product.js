@@ -7,13 +7,18 @@ import prodbg from '../../assets/prodbg.png';
 import vipnft from '../../assets/vipnft.png';
 import logo from '../../assets/logo.png';
 import copy from '../../assets/copy.png';
+import Web3 from 'web3/dist/web3.min.js';
+import { saleContractAddress, saleContractAbi } from '../../contracts/saleContracInfo'
 
 const Product = (props) => {
   const [modal, setModal] = useState(false);
   const [modalPayment, setModalPayment] = useState(false);
+  const [inputValue, setInputValue] = useState(1);
+  const [provider, setProvider] = useState(window.ethereum);
 
   const toggle = () => setModal(true);
   const toggleClose = () => setModal(!modal);
+  const web3 = new Web3(provider);
 
   const handleRadioButtonChange = () => {
     setModal(false)
@@ -22,11 +27,47 @@ const Product = (props) => {
 
   const togglePaymentClose = () => setModalPayment(!modalPayment);
 
-  // let history = useHistory();
+  const buyNFTs = async () => {
 
-  // const handleRadioChange = () => {
-  //   history.push("/");
-  // }
+    setModalPayment(!modalPayment);
+    const ContractSaleInfo = new web3.eth.Contract(saleContractAbi, saleContractAddress);
+    const accounts = await window.ethereum.request({
+      method: "eth_accounts",
+    });
+
+    const nftPrice = await ContractSaleInfo.methods.getPrice().call();
+
+    const buyTx = await ContractSaleInfo.methods.bulkbuy(inputValue).send(
+      {
+        from: accounts[0],
+        value: nftPrice * inputValue
+      })
+      .then((receipt) => {
+        console.log("Value of receipt", receipt);
+      }).catch(error => {
+        console.log("An error occour", error);
+      })
+  }
+
+  const handleChange = (e) => {
+    setInputValue(e.target.value)
+  }
+
+  const purchaseNFT = async () => {
+
+    const tokenAmount = inputValue;
+    const alert = (tokenAmount > 0 && tokenAmount <= 50) ? true : false
+    if (alert) {
+      toggle();
+    } else {
+      runAlert()
+    }
+
+  }
+
+  const runAlert = () => {
+    alert("Please enter the NFT amount between 1 and 50")
+  }
 
   return (
     <React.Fragment>
@@ -55,10 +96,10 @@ const Product = (props) => {
                   <div className="price">
                     <p>Quantity</p>
                     <div className="quantity">
-                      <Input type="number" id="quantity" name="quantity" />
+                      <Input placeholder={inputValue} id="quantity" name="quantity" onChange={handleChange} />
                     </div>
                   </div>
-                  <Button onClick={toggle}>Purchase</Button>
+                  <Button onClick={purchaseNFT}>Purchase</Button>
                 </div>
               </div>
             </Col>
@@ -89,23 +130,24 @@ const Product = (props) => {
         </div>
       </Container>
       <Modal isOpen={modal} toggle={toggle} className="modal-dialog">
+
         <ModalBody>
           <h4>Please select a payment method</h4>
           <FormGroup tag="fieldset">
+
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="radio1" onChange={() => handleRadioButtonChange()} /> ETH Payment </Label>
             </FormGroup>
-            {/* <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio1" onChange={handleRadioChange} /> Credit Card</Label>
-            </FormGroup> */}
+
           </FormGroup>
         </ModalBody>
+
         <ModalFooter>
           <Button color="secondary" className="cancel" onClick={toggleClose}>Cancel</Button>
           <Button className="continue" onClick={() => handleRadioButtonChange()}>Continue</Button>
         </ModalFooter>
+
       </Modal>
       <Modal isOpen={modalPayment} className="modal-dialog">
         <ModalBody>
@@ -121,7 +163,7 @@ const Product = (props) => {
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" className="cancel" onClick={togglePaymentClose}>Cancel</Button>
-          <Button className="continue">Continue</Button>
+          <Button onClick={buyNFTs} className="continue">Continue</Button>
         </ModalFooter>
       </Modal>
     </React.Fragment>

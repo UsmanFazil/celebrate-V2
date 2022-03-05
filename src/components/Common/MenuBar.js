@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+
 import {
   Collapse,
   Navbar,
@@ -12,34 +13,43 @@ import {
   DropdownMenu,
   Button,
 } from "reactstrap";
+
 import { animateScroll as scroll } from "react-scroll";
-// , Events, scroller
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import copy from '../../assets/copy.png';
 import copyblack from '../../assets/copyblack.png';
 import profile from '../../assets/profile.png';
-import logout from '../../assets/logout.png';
-// import { setLocale } from "../../store/actions/locale";
-// import { connect } from "http2";
-// import PropTypes from "prop-types";
-// import { connect } from "react-redux";
 
 function MenuBar() {
 
   // Collapse isOpen State
   const [isOpen, setIsOpen] = useState(false);
-  const [isAuth, setIsAuth] = useState(false);
+  const [isLogged, setIsLogged] = useState('');
 
-  // const authEnable = () => {
-  //   setIsAuth(true);
-  // }
-  // const authDisable = () => {
-  //   setIsAuth(!isAuth);
-  // }
+  async function checkIfWalletIsConnected() {
+    if (window.ethereum) {
+      const accounts = await window.ethereum.request({
+        method: "eth_accounts",
+      });
+
+      if (accounts.length > 0) {
+        const account = accounts[0];
+        setIsLogged(account);
+        return;
+      }
+    }
+  }
+
+  useEffect(() => {
+    checkIfWalletIsConnected();
+  }, []);
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
+
+
   return (
     <header>
       <Container fluid="xl">
@@ -77,60 +87,46 @@ function MenuBar() {
                       Discord
                     </a>
                   </NavItem>
-                  <NavItem id="connectwallet">
+
+                  {isLogged.length > 0 ? <NavItem id="account">
+                    <UncontrolledDropdown>
+                      <DropdownToggle>
+                        <img src={copy} alt="account" />
+                      </DropdownToggle>
+                      <DropdownMenu right>
+                        <ul>
+                          <li>
+                            <div className="wallet">
+                              <div className="address">
+                                {isLogged.slice(0, 15) + `...` + isLogged.slice(-1 * 4)}
+
+                              </div>
+                              <Button>
+                                <img src={copyblack} height="100%" width="100%" alt="copy" />
+                              </Button>
+                            </div>
+                          </li>
+                          <li>
+                            <Link
+                              to="/my-account"
+
+                              className="prolink"
+                            >
+                              <img
+                                src={profile}
+                                alt="profile"
+                              />
+                              <span>My Account</span>
+                            </Link>
+                          </li>
+                        </ul>
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
+                  </NavItem> : <NavItem id="connectwallet">
                     <Link to="/connect-wallet" className="connect-wallet">
                       Connect Wallet
                     </Link>
-                  </NavItem>
-                  {isAuth ?
-                    <NavItem id="account">
-                      <UncontrolledDropdown>
-                        <DropdownToggle>
-                          <img src={copy} alt="account" />
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                          <ul>
-                            <li>
-                              <div className="wallet">
-                                <div className="address">
-                                  0x278992821842c0a70
-                                </div>
-                                <Button>
-                                  <img src={copyblack} height="100%" width="100%" alt="copy" />
-                                </Button>
-                              </div>
-                            </li>
-                            <li>
-                              <Link
-                                to="/my-account"
-
-                                className="prolink"
-                              >
-                                <img
-                                  src={profile}
-                                  alt="profile"
-                                />
-                                <span>My Account</span>
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                to="/"
-
-                                className="prolink"
-                              >
-                                <img
-                                  src={logout}
-                                  alt="logout"
-                                />
-                                <span>Sign out</span>
-                              </Link>
-                            </li>
-                          </ul>
-                        </DropdownMenu>
-                      </UncontrolledDropdown>
-                    </NavItem>
-                    : null}
+                  </NavItem>}
                 </Nav>
               </Collapse>
             </>
