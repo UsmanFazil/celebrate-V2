@@ -148,18 +148,19 @@ const Collections = () => {
               </Col>
               <Col xl={9} lg={8} md={7} sm={12} xs={12}>
                 <div className="collection-details">
-                  <Link to="#" className="title">{item.subtitle}</Link>
+                  {/* <Link to="#" className="title">{item.subtitle}</Link> */}
                   <p>{item.desc}</p>
                   {item.id === '0' ? (
                     <>
                       <ul>
                         <li>- <Link to="#">FREE Cybiez Airdrop</Link></li>
-                        <li>- Access to upgrade your Cybiez</li>
-                        <li>- <Link to="#">FREE Cybiez decentraland wearable</Link></li>
-                        <li>- Pre mint Cybiez public sale</li>
                         <li>- ETH giveaways</li>
                         <li>- VIP Lounge access</li>
                         <li>- Community DAO</li>
+                        <li>- Pre mint Cybiez public sale</li>
+                        <li>- Access to upgrade your Cybiez</li>
+                        <li>- <Link to="#">FREE Cybiez decentraland wearable</Link></li>
+                        
                         <li>- VIP access to CelebrateNFT ecosystem</li>
                       </ul>
                       <div className="outcomes">

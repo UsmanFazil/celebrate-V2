@@ -11,7 +11,7 @@
     padding: 0 10rem;
     width: 100%;
     .graphic {
-      max-width: 60.625rem;
+      max-width: 53rem;
       position: relative;
       width: 100%;
       img {
@@ -19,15 +19,15 @@
         margin: 3rem auto 0;
       }
       .btns {
-        bottom: 3rem;
+        bottom: 3.5rem;
         display: flex;
         justify-content: flex-start;
         margin: 1.5rem 0 0;
         position: absolute;
-        right: 3rem;
+        right: 1.5rem;
         button {
           &:first-child {
-            margin: 0 1rem 0 0;
+            margin: 0 1rem 0 0; 
             min-width: 11.5rem;
           }
         }
@@ -41,10 +41,11 @@
       width: 100%;
     }
   }
-  @media (max-width: 1360px) {
+  @media (max-width: 1399px) {
     .inner {
       .graphic {
         .btns {
+          bottom: 2.5rem;
           right: 1rem;
         }
       }
@@ -56,7 +57,8 @@
       .graphic {
         max-width: 100%;
         .btns {
-          right: 1rem;
+          bottom: 4rem;
+          right: 1.5rem;
         }
       }
     }
@@ -66,7 +68,7 @@
       padding: 0;
       .graphic {
         .btns {
-          bottom: 2.5rem;
+          bottom: 3.5rem;
         }
       }
     }
@@ -362,7 +364,7 @@
       border: 1px solid #6ad935;
       border-radius: 1.5rem;
       display: block;
-      padding: 1rem 0.5rem 2.5rem;
+      padding: 0.5rem 0 2.5rem;
       .slick-dots {
         bottom: 0.5rem;
         li.slick-active button::before {
@@ -376,15 +378,15 @@
     }
     .card-box {
       max-width: 20rem;
-      margin: 1rem auto 0;
+      margin: 0.75rem auto 0;
     }
     .collection-details {
       background-color: transparent;
       border-radius: 0;
-      height: 30rem;
-      padding: 1rem 0;
+      height: 22rem;
+      padding: 0.5rem 0;
       ul {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
         li {
           width: 50%;
           &:nth-child(even) {
@@ -393,15 +395,44 @@
         }
       }
       .outcomes {
-        position: static;
+        bottom: 1rem;
+        left: 0;
+        position: absolute;
       }
     }
     .become-vip {
       margin: 1.5rem 0 0;
     }
   }
-  @media (max-width: 575px) {
+  @media (max-width: 667px) {
     .collection-details {
+      height: 25rem;
+    }
+  }
+  @media (max-width: 575px) {
+    .card-box {
+      max-width: 15rem;
+      .card-inner {
+        padding: 0.25rem 0.75rem;
+      }
+      p {
+        font-size: 0.572rem;
+      }
+      .top {
+        p {
+          font-size: 1.25rem;
+        }
+      }
+      .bottom {
+        padding: 0.25rem 0 0;
+        .creator {
+          margin: 0 0 0.125rem;
+        }
+      }
+    }
+    .collection-details {
+      height: 14rem;
+      padding: 0.25rem 0;
       .title {
         font-size: 0.875rem;
       }
@@ -409,9 +440,15 @@
         font-size: 0.75rem;
       }
       ul {
+        margin: 0.5rem 0;
         li {
           font-size: 0.75rem;
         }
+      }
+      .outcomes {
+        bottom: 0.5rem;
+        left: 0;
+        position: absolute;
       }
     }
     .become-vip {
@@ -429,8 +466,24 @@
       }
     }
   }
+  @media (max-width: 480px) {
+    .collection-details {
+      height: 15rem;
+    }
+  }
+  @media (max-width: 424px) {
+    .collection-details {
+      height: 17rem;
+    }
+  }
+  @media (max-width: 400px) {
+    .collection-details {
+      height: 19rem;
+    }
+  }
   @media (max-width: 360px) {
     .collection-details {
+      height: 22rem;
       ul {
         li {
           width: 100%;
@@ -485,9 +538,9 @@
       position: absolute;
     }
     .item-two {
-      top: 13rem;
-      right: 14rem;
-      width: 10rem;
+      top: 10rem;
+      right: 9rem;
+      width: 13rem;
       position: absolute;
     }
     .item-three {
@@ -524,8 +577,8 @@
         max-width: 40rem;
       }
       .item-two {
-        top: 9rem;
-        right: 12rem;
+        top: 6rem;
+        right: 6rem;
       }
       .item-three {
         bottom: 11rem;
@@ -544,10 +597,6 @@
   }
   @media (max-width: 1199px) {
     .eco-cycle {
-      .item-two {
-        top: 9rem;
-        right: 12rem;
-      }
       .item-three {
         right: 0;
         width: 17rem;
@@ -566,7 +615,7 @@
   @media (max-width: 1100px) {
     .eco-cycle {
       .item-two {
-        right: 7rem;
+        right: 4rem;
       }
       .item-three {
         width: 15rem;
@@ -583,7 +632,7 @@
     }
   }
   @media (max-width: 991px) {
-    .eco-cycle {
+    .eco-cycle { 
       img {
         max-width: 30rem;
       }
@@ -595,8 +644,8 @@
         width: 5rem;
       }
       .item-two {
-        top: 7rem;
-        right: 10rem;
+        top: 5rem;
+        right: 8rem;
         width: 8rem;
       }
       .item-three {
@@ -827,6 +876,7 @@
       // background: linear-gradient(180deg, #161616 10.42%, rgba(22, 22, 22, 0) 100%);
       // background-blend-mode: darken;
       // transform: rotate(-90.35deg);
+      display: none;
       background: rgb(22, 22, 22);
       background: linear-gradient(
         90deg,
@@ -844,6 +894,7 @@
       // background: linear-gradient(180deg, #161616 6.77%, rgba(22, 22, 22, 0) 100%);
       // background-blend-mode: darken;
       // transform: rotate(89.61deg);
+      display: none;
       background: rgb(22, 22, 22);
       background: linear-gradient(
         274deg,

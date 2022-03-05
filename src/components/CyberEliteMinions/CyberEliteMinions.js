@@ -134,6 +134,7 @@ const CyberEliteMinions = () => {
     dots: false,
     infinite: true,
     arrows: false,
+    pauseOnHover: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
@@ -170,12 +171,20 @@ const CyberEliteMinions = () => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
   const LTRsettings = {
     dots: false,
     infinite: true,
     arrows: false,
+    pauseOnHover: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
@@ -209,6 +218,13 @@ const CyberEliteMinions = () => {
         breakpoint: 800,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },

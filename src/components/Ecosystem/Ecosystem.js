@@ -23,8 +23,9 @@ const Ecosystem = () => {
                 Stake your Cybiez
               </p>
               <p className="item-two">
-                Yield Daily &nbsp;
-                <Link to="/">$Fandom</Link>
+                Yeild daily <br />
+                <Link to="/">$Fandom</Link>&nbsp;
+                based on Cybiez rarity
               </p>
               <p className="item-three">
                 Hold ONE VIP token & burn <Link to="/">$Fandom</Link> to upgrade your Cybiez identity to earn more and do more!
